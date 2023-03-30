@@ -7,22 +7,39 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     private bool isMoving;
     private Vector2 input;
+    private Vector2 currentPos;
 
     private Animator animator;
 
     public LayerMask solidObjectsLayer;
     public LayerMask interactablesLayer;
 
+    public GameObject buy_bread_from_baker;
+    public GameObject fish_from_the_docks;
+
+    private BoxCollider2D buy_bread_from_baker_collider;
+    private BoxCollider2D fish_from_the_docks_collider;
+
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        buy_bread_from_baker_collider = buy_bread_from_baker.GetComponent<BoxCollider2D>();
+        fish_from_the_docks_collider = fish_from_the_docks.GetComponent<BoxCollider2D>();
+        currentPos = new Vector2(transform.position.x, transform.position.y);
     }
+
+
 
 
     // Update is called once per frame
     public void HandleUpdate()
     {
-        if(!isMoving)
+        // checking if player is inside event area
+        eventCollisionChecker();
+
+
+        if (!isMoving)
         {
             // gets input from wasd (0 no movement, 1 up/right, -1 down/left)
             input.x = Input.GetAxisRaw("Horizontal");
@@ -92,6 +109,22 @@ public class PlayerController : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+
+    private void insideEventZone(BoxCollider2D eventCollider)
+    {
+        // remember to set the z-value of the event zones box colliders to 0
+        if (eventCollider.bounds.Contains(transform.position))
+        {
+            Debug.Log("Starting event: " + eventCollider.name);
+        }
+    }
+
+    private void eventCollisionChecker()
+    {
+        insideEventZone(buy_bread_from_baker_collider);
+        insideEventZone(fish_from_the_docks_collider);
     }
 
 }
