@@ -735,6 +735,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &797793028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797793029}
+  - component: {fileID: 797793030}
+  m_Layer: 0
+  m_Name: EventGetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &797793029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797793028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1534130847}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797793030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797793028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48973aba89768574c86634c1b3b42b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &873520932
 Sprite:
   m_ObjectHideFlags: 0
@@ -13847,6 +13891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525456712}
   - component: {fileID: 1525456713}
+  - component: {fileID: 1525456714}
   m_Layer: 0
   m_Name: Buy bread from baker
   m_TagString: Untagged
@@ -13862,7 +13907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525456711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.84, y: -1.67, z: -19.451813}
+  m_LocalPosition: {x: -7.84, y: -11.12, z: -19.451813}
   m_LocalScale: {x: 3.6402898, y: 3.6402898, z: 3.6402898}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13895,6 +13940,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!114 &1525456714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525456711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6839571ab426b4c4d84801085a2c8b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1534130846
 GameObject:
   m_ObjectHideFlags: 0
@@ -13925,6 +13982,7 @@ Transform:
   m_Children:
   - {fileID: 1487348942}
   - {fileID: 1525456712}
+  - {fileID: 797793029}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15201,9 +15259,10 @@ GameObject:
   - component: {fileID: 1843739135}
   - component: {fileID: 1843739136}
   - component: {fileID: 1843739137}
+  - component: {fileID: 1843739138}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: x
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15355,6 +15414,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1843739138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843739132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dcb9770f0a3a2479a8698867c9df9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currency: 0
+  charisma: 0
+  intelligence: 0
+  strength: 0
+  health: 0
+  entropy: 0
+  patrol: 0
+  karma: 0
 --- !u!1 &1920344231
 GameObject:
   m_ObjectHideFlags: 0
