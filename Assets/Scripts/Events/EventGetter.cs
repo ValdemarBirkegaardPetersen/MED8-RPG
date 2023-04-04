@@ -10,6 +10,8 @@ public class EventGetter : MonoBehaviour
         
     }
 
+
+
     public int getCharisma()
     {
         return GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().charisma;
@@ -91,6 +93,38 @@ public class EventGetter : MonoBehaviour
     public void setKarma(float k)
     {
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().karma = k;
+    }
+
+    public int CalculateOutcome(params float[] outcomes)
+    {
+        List<int> oContainer = new List<int>();
+        float totalSum = 0;
+        float totalLength = outcomes.Length;
+
+        foreach (float v in outcomes)
+        {
+            oContainer.Add((int)v);
+            totalSum += v;
+        }
+
+        System.Random rnd = new System.Random();
+        float randomValue = rnd.Next(0, (int)totalSum);
+        Debug.Log("Random Value: " + randomValue);
+
+        int previous = 0;
+        int start = 0;
+        int i = 0;
+        for (i = 0; i < oContainer.Count - 1; i++)
+        {
+            previous += oContainer[i];
+            if (randomValue >= start && randomValue <= previous)
+            {
+                break;
+            }
+
+            start += oContainer[i];
+        }
+        return i;
     }
 
 }
