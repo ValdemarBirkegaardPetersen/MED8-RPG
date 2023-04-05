@@ -5,9 +5,9 @@ using UnityEngine;
 public class SecondNPCController : MonoBehaviour, Interactable
 {
     [SerializeField] Dialog dialog;
-    public void Interact()
+    public void Interact(string outcomestr)
     {
-        StartCoroutine(DialogManager.Instance.ShowDialog(dialog));
+        StartCoroutine(DialogManager.Instance.ShowDialog(dialog, outcomestr));
     }
 
 }

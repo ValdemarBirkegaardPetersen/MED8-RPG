@@ -14,6 +14,8 @@ public class PlayerStats : MonoBehaviour
     public float patrol;
     public float karma;
 
+    public string lastVisitedScene = "";
+
     void Awake()
     {
         currency = 10;

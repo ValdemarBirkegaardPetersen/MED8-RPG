@@ -24,14 +24,20 @@ public class DialogManager : MonoBehaviour
     Dialog dialog;
     int currentLine = 0;
     bool isTyping;
-    public IEnumerator ShowDialog(Dialog dialog)
+    public IEnumerator ShowDialog(Dialog dialog, string outcomeStr)
     {
         yield return new WaitForEndOfFrame();
         OnShowDialog?.Invoke();
 
         this.dialog = dialog;
         dialogBox.SetActive(true);
+        dialog.Lines[0] = outcomeStr;
         StartCoroutine(TypeDialog(dialog.Lines[0]));
+    }
+
+    public void changeDialogLine(Dialog dialog, string event_outcome_text)
+    {
+        dialog.Lines[0] = event_outcome_text;
     }
 
     public void HandleUpdate()

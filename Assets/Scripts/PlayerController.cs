@@ -15,12 +15,18 @@ public class PlayerController : MonoBehaviour
     public LayerMask interactablesLayer;
 
     public GameObject buy_bread_from_baker;
+    public BuyBreadFromBaker_Event buy_bread_event;
+
     public GameObject fish_from_the_docks;
+    public FishFromTheDocksEvent fish_from_dock;
+
 
     private BoxCollider2D buy_bread_from_baker_collider;
     private BoxCollider2D fish_from_the_docks_collider;
 
 
+
+    
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -68,24 +74,29 @@ public class PlayerController : MonoBehaviour
 
         animator.SetBool("isMoving", isMoving);
 
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            Interact();
-        }
+        /*
 
-        void Interact()
-        {
-            var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
-            var interactPos = transform.position + facingDir;
+if(Input.GetKeyDown(KeyCode.Z))
+{
+    Interact();
+}
 
-            Debug.DrawLine(transform.position, interactPos, Color.red, 1f);
+void Interact()
+{
+    var facingDir = new Vector3(animator.GetFloat("moveX"), animator.GetFloat("moveY"));
+    var interactPos = transform.position + facingDir;
+    var curentPos = transform.position;
 
-            var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactablesLayer);
-            if(collider != null)
-            {
-                collider.GetComponent<Interactable>()?.Interact();
-            }
-        }
+    Debug.DrawLine(transform.position, interactPos, Color.red, 1f);
+
+    var collider = Physics2D.OverlapCircle(curentPos, 0.2f, interactablesLayer);
+    if(collider != null)
+    {
+        collider.GetComponent<Interactable>()?.Interact();
+    }
+}
+        */
+
     }
 
     IEnumerator Move(Vector3 targetPos)
@@ -104,7 +115,7 @@ public class PlayerController : MonoBehaviour
     
     private bool isWalkable(Vector3 targetPos)
     {
-        if(Physics2D.OverlapCircle(targetPos, 0.05f, solidObjectsLayer | interactablesLayer) != null)
+        if(Physics2D.OverlapCircle(targetPos, 0.05f, solidObjectsLayer) != null)
         {
             return false;
         }
@@ -117,7 +128,26 @@ public class PlayerController : MonoBehaviour
         // remember to set the z-value of the event zones box colliders to 0
         if (eventCollider.bounds.Contains(transform.position))
         {
-            Debug.Log("Starting event: " + eventCollider.name);
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                // Debug.Log("Starting event: " + eventCollider.name);
+
+                var curentPos = transform.position;
+
+                var collider = Physics2D.OverlapCircle(curentPos, 0.2f, interactablesLayer);
+                if (collider != null)
+                {
+                    var eventTag = collider.tag;
+                    var outcomeString = runSpecificEvent(eventTag);
+
+                    collider.GetComponent<Interactable>()?.Interact(outcomeString);
+                }
+
+                
+
+
+            // DialogManager.Instance.ShowDialog(eventCollider.GetComponent<DialogTrigger>().dialog);
+            }
         }
     }
 
@@ -125,6 +155,22 @@ public class PlayerController : MonoBehaviour
     {
         insideEventZone(buy_bread_from_baker_collider);
         insideEventZone(fish_from_the_docks_collider);
+    }
+
+    private string runSpecificEvent (string input)
+    {
+        if (input == "bread")
+        {
+            return buy_bread_event.Run();
+        }
+
+        if (input == "fish")
+        {
+            return fish_from_dock.Run();
+        }
+
+
+        return "404";
     }
 
 }

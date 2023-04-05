@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventGetter : MonoBehaviour
+public class EventUtility : MonoBehaviour
 {
 
     public void Start()
@@ -109,7 +109,6 @@ public class EventGetter : MonoBehaviour
 
         System.Random rnd = new System.Random();
         float randomValue = rnd.Next(0, (int)totalSum);
-        Debug.Log("Random Value: " + randomValue);
 
         int previous = 0;
         int start = 0;
