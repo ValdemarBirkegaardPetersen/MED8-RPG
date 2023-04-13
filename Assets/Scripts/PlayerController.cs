@@ -20,18 +20,34 @@ public class PlayerController : MonoBehaviour
     public GameObject fish_from_the_docks;
     public FishFromTheDocksEvent fish_from_dock;
 
+    public GameObject get_haircut_from_barber;
+    public GetHaircutEvent get_haircut_event;
+
+    public GameObject read_at_library;
+    public ReadAtLibraryEvent read_at_library_event;
+
+    public GameObject make_investment_at_bank;
+    public MakeInvestmentAtBankEvent make_investment_at_bank_event;
+
 
     private BoxCollider2D buy_bread_from_baker_collider;
     private BoxCollider2D fish_from_the_docks_collider;
+    private BoxCollider2D get_haircut_from_barber_collider;
+    private BoxCollider2D read_at_library_collider;
+    private BoxCollider2D make_investment_at_bank_collider;
 
 
 
-    
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         buy_bread_from_baker_collider = buy_bread_from_baker.GetComponent<BoxCollider2D>();
         fish_from_the_docks_collider = fish_from_the_docks.GetComponent<BoxCollider2D>();
+        get_haircut_from_barber_collider = get_haircut_from_barber.GetComponent<BoxCollider2D>();
+        read_at_library_collider = read_at_library.GetComponent<BoxCollider2D>();
+        make_investment_at_bank_collider = make_investment_at_bank.GetComponent<BoxCollider2D>();
+
         currentPos = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -155,6 +171,10 @@ void Interact()
     {
         insideEventZone(buy_bread_from_baker_collider);
         insideEventZone(fish_from_the_docks_collider);
+        insideEventZone(get_haircut_from_barber_collider);
+        insideEventZone(read_at_library_collider);
+        insideEventZone(make_investment_at_bank_collider);
+
     }
 
     private string runSpecificEvent (string input)
@@ -167,6 +187,21 @@ void Interact()
         if (input == "fish")
         {
             return fish_from_dock.Run();
+        }
+
+        if (input == "haircut")
+        {
+            return get_haircut_event.Run();
+        }
+
+        if (input == "library")
+        {
+            return read_at_library_event.Run();
+        }
+
+        if (input == "investment")
+        {
+            return make_investment_at_bank_event.Run();
         }
 
 

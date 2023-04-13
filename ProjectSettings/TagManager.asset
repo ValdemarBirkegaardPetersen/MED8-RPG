@@ -7,6 +7,9 @@ TagManager:
   - x
   - bread
   - fish
+  - haircut
+  - library
+  - investment
   layers:
   - Default
   - TransparentFX

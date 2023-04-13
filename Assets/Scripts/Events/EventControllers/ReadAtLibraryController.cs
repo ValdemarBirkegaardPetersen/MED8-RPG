@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondNPCController : MonoBehaviour, Interactable
+public class ReadAtLibraryController : MonoBehaviour, Interactable
 {
     [SerializeField] Dialog dialog;
     public void Interact(string outcomestr)
