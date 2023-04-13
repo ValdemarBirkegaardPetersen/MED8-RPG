@@ -226,7 +226,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                // Debug.Log("Starting event: " + eventCollider.name);
+                Debug.Log("Starting event: " + eventCollider.name);
 
                 var curentPos = transform.position;
 
