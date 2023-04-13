@@ -10,6 +10,28 @@ TagManager:
   - haircut
   - library
   - investment
+  - bank
+  - garden
+  - bath
+  - beggar
+  - gambling
+  - ale
+  - unload
+  - steal
+  - fortune
+  - healing
+  - blacksmith
+  - meditate
+  - hunt
+  - harvest
+  - Acedemic
+  - acedemic
+  - spices
+  - breakin
+  - faith
+  - mine
+  - sabotage
+  - ritual
   layers:
   - Default
   - TransparentFX
