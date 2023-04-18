@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Sign Baker 2_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -108109061, guid: f6434cc147f4ddd4aa9578878d3f3564, type: 3}
+  m_Sprite: {fileID: 1295006176, guid: bc5b216031c656a49b8d33d8b79f0f06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

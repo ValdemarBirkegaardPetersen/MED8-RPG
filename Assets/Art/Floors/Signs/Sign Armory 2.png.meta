@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b097f996a7ad6c4b969667ea64a3dd0
-      internalID: 1648262400
+      spriteID: 88f593e910510a7409a22e0864374d68
+      internalID: -1638892601
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62cf4e403fb901045bfff426ba4dbd8a
-      internalID: 573494135
+      spriteID: 7b7386043f0fac54797eb3835870c781
+      internalID: -558565882
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3314369683fdd6446a0a0c7a0fc240a1
-      internalID: 2069005041
+      spriteID: e115635ffb75e2a44a6ecb712e0ee92e
+      internalID: 1529972143
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fc1105d715e8c24fa667b1e60e2de23
-      internalID: 1300914991
+      spriteID: 78aa9f4b966a55540854e74db9f446fc
+      internalID: -690233063
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3add82c894ff1cf4c913e3a7eb214006
-      internalID: -164661220
+      spriteID: bdb972a2d2133c146bddd754aa88800e
+      internalID: 1468487974
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2a3abc6d15d5e543b3bbc4ed95ed675
-      internalID: -627667045
+      spriteID: 1fb104dfdd51f794c9cc8124cc421832
+      internalID: -104125056
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sign Armory 2_3: 1300914991
-      Sign Armory 2_4: -164661220
-      Sign Armory 2_1: 573494135
-      Sign Armory 2_2: 2069005041
-      Sign Armory 2_0: 1648262400
-      Sign Armory 2_5: -627667045
+      Sign Armory 2_3: -690233063
+      Sign Armory 2_4: 1468487974
+      Sign Armory 2_1: -558565882
+      Sign Armory 2_2: 1529972143
+      Sign Armory 2_0: -1638892601
+      Sign Armory 2_5: -104125056
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

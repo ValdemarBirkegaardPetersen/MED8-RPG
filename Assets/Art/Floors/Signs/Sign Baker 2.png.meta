@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6434cc147f4ddd4aa9578878d3f3564
+guid: bc5b216031c656a49b8d33d8b79f0f06
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd57c0b033dc7a4b98f0b3e7e57dd0a
-      internalID: -1161635925
+      spriteID: ae16dc2a27245c0428e2a74278eb3de4
+      internalID: -804244179
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a674d9a7060fa674c9609a703cb0f9fd
-      internalID: 1599489037
+      spriteID: ca352c9c869d6d24893c003ca952ccbc
+      internalID: 1839681590
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d517a35bfa5642e4baf1cf492b079d74
-      internalID: -758708861
+      spriteID: a6c63ff055de6f8428b87ae13a96e721
+      internalID: -1989967594
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07ae3b51b3aa1f245b98b1c3e84afbca
-      internalID: 1730900604
+      spriteID: 118088ebfaa0a414f8a6ff5c3fcbed2e
+      internalID: -515187086
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5d7472ed67e5d4f9728a48a0530189
-      internalID: 1471487858
+      spriteID: 7e36ffc54c1216d42909b5ca18ab5d36
+      internalID: 1944477036
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 469fea74c4ae1414086eb74136e3ed52
-      internalID: -108109061
+      spriteID: f16f915c4764387448b2bd8a3540c30c
+      internalID: 1295006176
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sign Baker 2_5: -108109061
-      Sign Baker 2_2: -758708861
-      Sign Baker 2_1: 1599489037
-      Sign Baker 2_3: 1730900604
-      Sign Baker 2_4: 1471487858
-      Sign Baker 2_0: -1161635925
+      Sign Baker 2_5: 1295006176
+      Sign Baker 2_2: -1989967594
+      Sign Baker 2_1: 1839681590
+      Sign Baker 2_3: -515187086
+      Sign Baker 2_4: 1944477036
+      Sign Baker 2_0: -804244179
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

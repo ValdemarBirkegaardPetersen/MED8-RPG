@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a453bc9645367444b9369d0e5f15530
-      internalID: -1660677609
+      spriteID: cb2c280dce4cdaa4981a4998ac8d08c3
+      internalID: -1671445985
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ec7d0d027022a40b6aca0a3ae75218
-      internalID: 1043968048
+      spriteID: 4ca98ac9d7a4349428e83b9d40448a02
+      internalID: -243233777
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84918366f76d4ae4583ac30906f91bbe
-      internalID: 1296505462
+      spriteID: f30242a5a5b75624e8793937be79e84f
+      internalID: -58754956
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c26a74c9ebcec7941a1011ec24ea93dd
-      internalID: -900055235
+      spriteID: 2c6bdc9049f2f9e4b8d83794ecb70569
+      internalID: -1724883433
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3ef366f3c5575241be804cd8a23e445
-      internalID: 156385585
+      spriteID: 8d0ff63ec1c50ce4096d2d2eaf3d54cb
+      internalID: 97270990
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 350adb9ca55efc342b332b4cb36a9815
-      internalID: -1780358076
+      spriteID: 534ce5ae03257fb499365f9088812b8e
+      internalID: 1259427212
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sign Uni 1_4: 156385585
-      Sign Uni 1_0: -1660677609
-      Sign Uni 1_2: 1296505462
-      Sign Uni 1_1: 1043968048
-      Sign Uni 1_5: -1780358076
-      Sign Uni 1_3: -900055235
+      Sign Uni 1_4: 97270990
+      Sign Uni 1_0: -1671445985
+      Sign Uni 1_2: -58754956
+      Sign Uni 1_1: -243233777
+      Sign Uni 1_5: 1259427212
+      Sign Uni 1_3: -1724883433
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

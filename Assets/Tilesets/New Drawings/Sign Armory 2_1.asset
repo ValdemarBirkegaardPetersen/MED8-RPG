@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Sign Armory 2_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 573494135, guid: 65e0928d794f32b4c9d86a8d7e6ec310, type: 3}
+  m_Sprite: {fileID: -558565882, guid: 65e0928d794f32b4c9d86a8d7e6ec310, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

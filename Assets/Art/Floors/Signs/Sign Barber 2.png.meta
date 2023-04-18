@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c52fa7cd44425a14498c250ad620766a
-      internalID: 434425793
+      spriteID: 7346b2df766dbff4a9328326f8a03bc0
+      internalID: -145797151
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc5d1448e4495a24da2573a1c3789db7
-      internalID: 128310728
+      spriteID: 3b2eec4a319e8e241ac29cee783c5466
+      internalID: -1535886058
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06bc35d1b54eb7f44ab4823ba2569a52
-      internalID: 2027011381
+      spriteID: b4a0740fc06118348a5627bfd3ed117d
+      internalID: -1904055618
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380721a09b8975a41b98f7f6aaa1b4b0
-      internalID: 174691937
+      spriteID: 14d18780301cf184ba4cbdb2e3aaea7e
+      internalID: -208186489
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc6099ed1c5846d41a869296e811381d
-      internalID: 1865024886
+      spriteID: 74bcec6da70be824e8461263ac7c59f5
+      internalID: -1201358643
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5af9a8cc04231994eb8345ff9be38a68
-      internalID: -1603504946
+      spriteID: d524ef30974e4b14fb5cbadb46d6a5ef
+      internalID: 1280170519
       vertices: []
       indices: 
       edges: []
@@ -241,12 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sign Barber 2_5: -1603504946
-      Sign Barber 2_3: 174691937
-      Sign Barber 2_1: 128310728
-      Sign Barber 2_0: 434425793
-      Sign Barber 2_4: 1865024886
-      Sign Barber 2_2: 2027011381
+      Sign Barber 2_5: 1280170519
+      Sign Barber 2_3: -208186489
+      Sign Barber 2_1: -1535886058
+      Sign Barber 2_0: -145797151
+      Sign Barber 2_4: -1201358643
+      Sign Barber 2_2: -1904055618
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
