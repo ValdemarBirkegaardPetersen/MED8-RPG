@@ -34,21 +34,25 @@ public class MakeInvestmentAtBankEvent : MonoBehaviour
         {
             eg.setHealth(eg.getHealth() - 25);
             eg.setCurrency(0);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "Just as you are about to invest your 5 coins, an armed robbery takes place and all the bank employees and visitors are robbed for all the gold they have. The robbers seem to recognize you. You attempt to resist but you suffer a sword wound and are left with no coin";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() + 2);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight profit";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() - 2);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight loss";
         }
         else if (finalOutcome == 3)
         {
             eg.setCurrency(eg.getCurrency() + 10);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "Using your own expertise you take initiative on some wise short term investment opportunities. You make a huge profit over a very short period of time before pulling your funds";
         }
 

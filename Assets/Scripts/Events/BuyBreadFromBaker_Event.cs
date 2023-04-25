@@ -36,23 +36,27 @@ public class BuyBreadFromBaker_Event : MonoBehaviour
         {
             eg.setCurrency(eg.getCurrency() - 3);
             eg.setHealth(eg.getHealth() - 15);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You pay the baker 3 coins for some bread. You eat it, but it didn't seem very fresh. You experience som slight food poisoning";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 3);
             eg.setHealth(eg.getHealth() + 15);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You pay the baker 3 coins for some bread. You eat it and feel restored";
         }
         else if (finalOutcome == 2)
         {
             eg.setHealth(eg.getHealth() + 15);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "The owner seems delighted to see you. They smile at you and gives you a piece of bread free of charge. You eat it and feel restored";
         }
         else if (finalOutcome == 3)
         {
             eg.setHealth(eg.getHealth() + 25);
             eg.setCurrency(eg.getCurrency() - 2);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.";
         }
 

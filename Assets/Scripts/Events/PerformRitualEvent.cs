@@ -34,11 +34,13 @@ public class PerformRitualEvent : MonoBehaviour
         {
             eg.setHealth(0);
             eg.setKarma(-1);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. All of a sudden your surroundings start to shake, and while your instinct tells you to stop, you succumb to the lust for power. Dark shrouded shadows enter your body and start eating you from within. After the ritual you are nothing but a pile of dust.";
         }
         else if (finalOutcome == 1)
         {
             eg.setHealth(eg.getHealth() - 30);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setIntelligence(10);
             return "You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss.";
         }
@@ -46,12 +48,14 @@ public class PerformRitualEvent : MonoBehaviour
         {
             eg.setHealth(eg.getHealth() - 30);
             eg.setStrength(10);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.";
         }
         else if (finalOutcome == 3)
         {
             eg.setHealth(eg.getHealth() - 30);
             eg.setCurrency(eg.getCurrency() + 100);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss.";
         }
 

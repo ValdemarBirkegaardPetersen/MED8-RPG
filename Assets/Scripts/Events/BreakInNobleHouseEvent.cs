@@ -32,6 +32,7 @@ public class BreakInNobleHouseEvent : MonoBehaviour
         if (finalOutcome == 0)
         {
             eg.setHealth(eg.getHealth() - 40);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering.";
         }
         else if (finalOutcome == 1)
@@ -41,12 +42,14 @@ public class BreakInNobleHouseEvent : MonoBehaviour
             eg.setHealth(eg.getHealth() - 10);
             eg.setPatrol(eg.getPatrol() + 0.5f);
             eg.setKarma(eg.getKarma() - 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You slip into the nobles house but after accidentally making some noise you are caught and unable to escape. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() + 25);
             eg.setPatrol(eg.getPatrol() + 0.5f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setKarma(eg.getKarma() - 0.2f);
             return "Attempting to sneakily enter the house, you bulkily stumble into some furniture and make some noise. A guard notices you but afraid of engaging you in combat, flees to warn the other guards. Before the other guards return you manage to escape with quite a handful of coin and jewelry which you sell on the black market for profit. Guard patrols are increased in the city.";
         }
@@ -54,6 +57,7 @@ public class BreakInNobleHouseEvent : MonoBehaviour
         {
             eg.setCurrency(eg.getCurrency() + 20);
             eg.setKarma(eg.getKarma() - 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You extensively plan a theft heist and sneak into the nobles house undetected. You grab what you easily can carry and avoid the guards patrol routes flawlessly. You manage to slip out silently with coin and jewelry, which you sell on the black market for profit. They never knew what hit them.";
         }
 

@@ -30,12 +30,14 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.4f);
             eg.setKarma(eg.getKarma() - 0.4f);
             eg.setCurrency(eg.getCurrency() - 20);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setStrength(eg.getStrength() - 3);
             return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. When they let you out you are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.";
         }
         else if (finalOutcome == 1)
         {
             eg.setPatrol(eg.getPatrol() - 0.5f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setKarma(eg.getKarma() - 0.4f);
             return "You successfully break in through the barred back door. You sabotage the weaponry and guard storage and escape without being caught. The city now has fewer resources to support the guard patrols.";
         }
@@ -43,6 +45,8 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
         {
             eg.setPatrol(eg.getPatrol() - 0.5f);
             eg.setKarma(eg.getKarma() - 0.4f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
+
             return "The guard armory has been left completely empty as all the guards are out on patrol. You successfully sabotage the weaponry and storage. The city now has fewer resources to support the guard patrols.";
         }
         else if (finalOutcome == 3)
@@ -51,6 +55,7 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
             eg.setKarma(eg.getKarma() - 0.4f);
             eg.setCurrency(eg.getCurrency() - 20);
             eg.setStrength(eg.getStrength() - 3);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. When they let you out you are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.";
         }
 

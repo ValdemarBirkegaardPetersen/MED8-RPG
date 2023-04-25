@@ -31,21 +31,25 @@ public class HuntInForestEvent : MonoBehaviour
         {
             eg.setHealth(eg.getHealth() - 65);
             eg.setStrength(eg.getStrength() - 4);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() + 5);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being unable to carry all of it you attempt to make it back with as much as possible. You sell it to the butcher for a bit of coin";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() + 10);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being strong enough, you manage to carry the entire deer back to the city, which you sell to the butcher for a good amount of coin";
         }
         else if (finalOutcome == 3)
         {
             eg.setCurrency(eg.getCurrency() - 15);
+            eg.setEntropy(eg.getEntropy() + 0.025f); 
             return "You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. While carrying it back however, you are robbed by a gang of highwaymen who steal your game, and some of your coin";
         }
 

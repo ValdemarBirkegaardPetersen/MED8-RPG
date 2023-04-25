@@ -32,18 +32,21 @@ public class GiveBeggarDonationEvent : MonoBehaviour
             eg.setCurrency(eg.getCurrency() - 8);
             eg.setIntelligence(0);
             eg.setKarma(eg.getKarma() + 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You give the beggar a coin. He seems appreciative, however when you aren't looking he pickpockets you for more of your coin. You notice him and he takes off running. You attempt to chase him, but end up falling and hitting your head on the pavement. You suffer serious brain damage";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 1);
             eg.setKarma(eg.getKarma() + 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You give the beggar a coin. He thanks you and wishes you good fortune going forward";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() - 1);
             eg.setKarma(eg.getKarma() + 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setIntelligence(eg.getIntelligence() + 2);
             return "You give the beggar a coin. He seems very appreciative and in return he teaches you a couple of life lessons he learned throughout his life";
         }
@@ -51,6 +54,7 @@ public class GiveBeggarDonationEvent : MonoBehaviour
         {
             eg.setCurrency(0);
             eg.setKarma(eg.getKarma() + 0.2f);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You pull out your coin pouch and reach in, but all of a sudden you are surrounded by a flock of thugs. They demand all your coin, and afraid of what they are going to do, you comply and give them the coin.";
         }
 

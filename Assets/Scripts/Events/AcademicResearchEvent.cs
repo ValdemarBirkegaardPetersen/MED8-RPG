@@ -37,17 +37,20 @@ public class AcademicResearchEvent : MonoBehaviour
         {
             eg.setCharisma(eg.getCharisma() - 2);
             eg.setIntelligence(eg.getIntelligence() - 2);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setCurrency(eg.getCurrency() - 30);
             return "You read through a bunch of books and, while under some strict deadlines, you rush some risky experiments too quickly resulting in a spontaneous combustion. You suffer burns and cranial damage from the explosion, and have to pay compensation to the institute";
         }
         else if (finalOutcome == 1)
         {
             eg.setIntelligence(eg.getIntelligence() + 1);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience";
         }
         else if (finalOutcome == 2)
         {
             eg.setIntelligence(eg.getIntelligence() + 1);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             eg.setCurrency(eg.getCurrency() + 20);
             return "You read through a bunch of books, and do a couple of experiments. You make some significant strides in your field and the institute sponsor you some coin to further your research";
         }
@@ -55,6 +58,7 @@ public class AcademicResearchEvent : MonoBehaviour
         {
             eg.setCharisma(0);
             eg.setIntelligence(eg.getIntelligence() + 1);
+            eg.setEntropy(eg.getEntropy() + 0.025f);
             return "You read through some books, but accidentally venture into some illegal fields of research. Caught but the fascination of your research you delve too deeply and are caught by your peers. They discard your research and they brand you as a despicable academic, spreading a poor reputation throughout the city";
         }
 
