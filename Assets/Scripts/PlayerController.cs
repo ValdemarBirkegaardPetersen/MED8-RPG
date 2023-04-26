@@ -1,13 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    /*
+     TODO:
+        - You cannot visit the same event twice
+        - Stats menu
+        - Music pitch change when entropy is high vs low
+
+        Thursday
+            - Implement ChatGPT closure
+    
+        
+     */
+
+    public string lastVisitedEvent = "";
+    
     public float moveSpeed;
     private bool isMoving;
     private Vector2 input;
     private Vector2 currentPos;
+
+    private bool atLeastOneTrue;
+
+    public GameObject panel;
+    private RectTransform rct;
 
     private Animator animator;
 
@@ -151,6 +171,11 @@ public class PlayerController : MonoBehaviour
         sabotage_guard_armory_collider = sabotage_guard_armory.GetComponent<BoxCollider2D>();
         perform_ritual_collider = perform_ritual.GetComponent<BoxCollider2D>();
 
+        atLeastOneTrue = false;
+
+        var panelRectTransform = panel.GetComponent<RectTransform>();
+        rct = panelRectTransform;
+
         currentPos = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -163,6 +188,14 @@ public class PlayerController : MonoBehaviour
         // checking if player is inside event area
         eventCollisionChecker();
 
+        if(atLeastOneTrue)
+        {
+            panel.SetActive(true);
+        }
+        else
+        {
+            panel.SetActive(false);
+        }
 
         if (!isMoving)
         {
@@ -219,59 +252,79 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void insideEventZone(BoxCollider2D eventCollider)
+    private bool insideEventZone(BoxCollider2D eventCollider)
     {
+        bool returnbool = false;
+        //rct.position = new Vector2(100000,10000);
+        //Debug.Log(rct.position);
         // remember to set the z-value of the event zones box colliders to 0
         if (eventCollider.bounds.Contains(transform.position))
         {
+            returnbool = true;
+            //rct.position = new Vector2(1000, 31.30f);
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                Debug.Log("Starting event: " + eventCollider.name);
-
                 var curentPos = transform.position;
-
                 var collider = Physics2D.OverlapCircle(curentPos, 0.2f, interactablesLayer);
-                if (collider != null)
+                if (eventCollider.name != lastVisitedEvent)
                 {
-                    var eventTag = collider.tag;
-                    var outcomeString = runSpecificEvent(eventTag);
+                    Debug.Log("Starting event: " + eventCollider.name);
+                    lastVisitedEvent = eventCollider.name;
 
-                    collider.GetComponent<Interactable>()?.Interact(outcomeString);
+
+                    if (collider != null)
+                    {
+                        var eventTag = collider.tag;
+                        var outcomeString = runSpecificEvent(eventTag);
+
+                        collider.GetComponent<Interactable>()?.Interact(outcomeString);
+                    }
+                } 
+                else
+                {
+                    collider.GetComponent<Interactable>()?.Interact("Come back again later.");
                 }
+
             }
         }
+
+        return returnbool;
     }
 
     private void eventCollisionChecker()
     {
-        insideEventZone(buy_bread_from_baker_collider);
-        insideEventZone(fish_from_the_docks_collider);
-        insideEventZone(get_haircut_from_barber_collider);
-        insideEventZone(read_at_library_collider);
-        insideEventZone(make_investment_at_bank_collider);
-        insideEventZone(rob_the_bank_collider);
-        insideEventZone(noble_garden_party_collider);
-        insideEventZone(visit_bathhouse_collider);
-        insideEventZone(give_beggar_collider);
-        insideEventZone(illegal_gambling_collider);
-        insideEventZone(ale_at_tavern_collider);
-        insideEventZone(unload_ship_goods_collider);
-        insideEventZone(steal_ship_supplies_collider);
-        insideEventZone(visit_fortune_teller_collider);
-        insideEventZone(buy_healing_mixture_collider);
-        insideEventZone(buy_equipment_blacksmith_collider);
-        insideEventZone(meditate_at_shrine_collider);
-        insideEventZone(hunt_in_forest_collider);
-        insideEventZone(help_farmer_collect_harvest_collider);
-        insideEventZone(acedemic_research_collider);
-        insideEventZone(trade_spices_collider);
-        insideEventZone(break_in_noble_house_collider);
-        insideEventZone(donate_to_faith_collider);
-        insideEventZone(mine_for_ore_collider);
-        insideEventZone(sabotage_guard_armory_collider);
-        insideEventZone(perform_ritual_collider);
+        var ev1 = insideEventZone(buy_bread_from_baker_collider);
+        var ev2 = insideEventZone(fish_from_the_docks_collider);
+        var ev3 = insideEventZone(get_haircut_from_barber_collider);
+        var ev4 = insideEventZone(read_at_library_collider);
+        var ev5 = insideEventZone(make_investment_at_bank_collider);
+        var ev6 = insideEventZone(rob_the_bank_collider);
+        var ev7 = insideEventZone(noble_garden_party_collider);
+        var ev8 = insideEventZone(visit_bathhouse_collider);
+        var ev9 = insideEventZone(give_beggar_collider);
+        var ev10 = insideEventZone(illegal_gambling_collider);
+        var ev11 = insideEventZone(ale_at_tavern_collider);
+        var ev12 = insideEventZone(unload_ship_goods_collider);
+        var ev13 = insideEventZone(steal_ship_supplies_collider);
+        var ev14 = insideEventZone(visit_fortune_teller_collider);
+        var ev15 = insideEventZone(buy_healing_mixture_collider);
+        var ev16 = insideEventZone(buy_equipment_blacksmith_collider);
+        var ev17 = insideEventZone(meditate_at_shrine_collider);
+        var ev18 = insideEventZone(hunt_in_forest_collider);
+        var ev19 = insideEventZone(help_farmer_collect_harvest_collider);
+        var ev20 = insideEventZone(acedemic_research_collider);
+        var ev21 = insideEventZone(trade_spices_collider);
+        var ev22 = insideEventZone(break_in_noble_house_collider);
+        var ev23 = insideEventZone(donate_to_faith_collider);
+        var ev24 = insideEventZone(mine_for_ore_collider);
+        var ev25 = insideEventZone(sabotage_guard_armory_collider);
+        var ev26 = insideEventZone(perform_ritual_collider);
 
-
+        atLeastOneTrue = false;
+        if (ev1 || ev2 || ev3 || ev4 || ev5 || ev6 || ev7 || ev8 || ev9 || ev10 || ev11 || ev12 || ev13 || ev14 || ev15 || ev16 || ev17 || ev18 || ev19 || ev20 || ev21 || ev22 || ev23 || ev24 || ev25 || ev26)
+        {
+            atLeastOneTrue = true;
+        }
     }
 
     private string runSpecificEvent (string input)
