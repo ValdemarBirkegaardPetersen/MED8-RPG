@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class PlayerStats : MonoBehaviour
     public float patrol;
     public float karma;
 
+    public GameObject stats;
+
+    private Text statsText;
+
     void Awake()
     {
         currency = 10;
@@ -25,11 +30,16 @@ public class PlayerStats : MonoBehaviour
         entropy = 0.00f;
         patrol = 0f;
         karma = 0f;
+
+        statsText = stats.GetComponent<Text>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        updateStatsUI();
+        
         // containing the stats in a range of 0-10 or 0-1 or -1-1
         if (currency < 0) { currency = 0; }
 
@@ -52,5 +62,17 @@ public class PlayerStats : MonoBehaviour
 
         if (karma < -1) { karma = -1; }
         if (karma > 1) { karma = 1; }
+    }
+
+
+    public void updateStatsUI ()
+    {
+        //var statsText = stats.GetComponent<Text>();
+        statsText.text =
+            "Health: " + health + "\n" +
+            "Currency: " + currency + "\n" +
+            "Strength: " + strength + "\n" +
+            "Charisma: " + charisma + "\n" +
+            "Intelligence: " + intelligence;
     }
 }

@@ -176,6 +176,7 @@ public class PlayerController : MonoBehaviour
         var panelRectTransform = panel.GetComponent<RectTransform>();
         rct = panelRectTransform;
 
+
         currentPos = new Vector2(transform.position.x, transform.position.y);
     }
 
