@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,7 +23,11 @@ public class PlayerController : MonoBehaviour
     private int chatgptIterator = 1;
     
     public string lastVisitedEvent = "";
-    
+
+    public TextMeshProUGUI textMeshPro;
+
+
+
     public float moveSpeed;
     private bool isMoving;
     private Vector2 input;
@@ -175,6 +180,8 @@ public class PlayerController : MonoBehaviour
         sabotage_guard_armory_collider = sabotage_guard_armory.GetComponent<BoxCollider2D>();
         perform_ritual_collider = perform_ritual.GetComponent<BoxCollider2D>();
 
+        textMeshPro.text = "Hello World";
+
         atLeastOneTrue = false;
 
         var panelRectTransform = panel.GetComponent<RectTransform>();
@@ -277,6 +284,8 @@ public class PlayerController : MonoBehaviour
         if (eventCollider.bounds.Contains(transform.position))
         {
             returnbool = true;
+            textMeshPro.text = "Press 'Z' to start the '" + eventCollider.name + "' event";
+
             //rct.position = new Vector2(1000, 31.30f);
             if (Input.GetKeyDown(KeyCode.Z))
             {
@@ -288,9 +297,6 @@ public class PlayerController : MonoBehaviour
                     Debug.Log("Starting event: " + eventCollider.name);
                     lastVisitedEvent = eventCollider.name;
 
-
-
-
                     if (collider != null)
                     {
                         var eventTag = collider.tag;
@@ -301,8 +307,6 @@ public class PlayerController : MonoBehaviour
                         chatgptInput += "Stat changes from event: ";
                         var outcomeString = runSpecificEvent(eventTag);
                         
-                        
-
                         chatgptInput += "\nEvent Outcome: " + outcomeString + "\n\n";
                         chatgptIterator += 1;
 
