@@ -27,7 +27,6 @@ public class HelpFarmerCollectHarvestEvent : MonoBehaviour
         var outcome2 = 10 - eg.getStrength();
         var outcome3 = eg.getIntelligence();
 
-
         var finalOutcome = eg.CalculateOutcome(outcome0, outcome1, outcome2, outcome3);
         // Debug.Log(finalOutcome);
 

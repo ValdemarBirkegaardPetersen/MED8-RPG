@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
         
      */
 
+    public string chatgptInput = "";
+    private int chatgptIterator = 1;
+    
     public string lastVisitedEvent = "";
     
     public float moveSpeed;
@@ -176,7 +179,6 @@ public class PlayerController : MonoBehaviour
         var panelRectTransform = panel.GetComponent<RectTransform>();
         rct = panelRectTransform;
 
-
         currentPos = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -243,6 +245,8 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
     }
     
+    
+    
     private bool isWalkable(Vector3 targetPos)
     {
         if(Physics2D.OverlapCircle(targetPos, 0.05f, solidObjectsLayer) != null)
@@ -273,11 +277,25 @@ public class PlayerController : MonoBehaviour
                     lastVisitedEvent = eventCollider.name;
 
 
+
+
                     if (collider != null)
                     {
                         var eventTag = collider.tag;
-                        var outcomeString = runSpecificEvent(eventTag);
 
+                        chatgptInput += "\nEvent: " + chatgptIterator + "\n"
+                            + "Event Name: " + eventCollider.name + "\n";
+
+                        chatgptInput += "Stat changes from event: ";
+                        var outcomeString = runSpecificEvent(eventTag);
+                        
+                        
+
+                        chatgptInput += "\nEvent Outcome: " + outcomeString + "\n\n";
+                        chatgptIterator += 1;
+
+                        Debug.Log(chatgptInput);
+                        
                         collider.GetComponent<Interactable>()?.Interact(outcomeString);
                     }
                 } 

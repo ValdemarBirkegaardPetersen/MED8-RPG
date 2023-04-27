@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EventUtility : MonoBehaviour
-{
+{    
 
     public void Start()
     {
-        
+
     }
 
+    public void Update()
+    {
+        //chatgptObject.GetComponent<PlayerController>().chatgptInput += "hey";
+    }
 
 
     public int getCharisma()
@@ -57,27 +61,36 @@ public class EventUtility : MonoBehaviour
 
     public void setCurrency(int curr)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().currency - curr).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().currency = curr;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " gold" + ", ";
     }
-
     public void setCharisma(int charis)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().charisma- charis).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().charisma = charis;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " charisma" + ", ";
     }
 
     public void setIntelligence(int intel)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().intelligence - intel).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().intelligence = intel;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " intelligence" + ", ";
     }
 
     public void setStrength(int str)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().strength - str).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().strength = str;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " strength" + ", ";
     }
 
     public void setHealth(int hp)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().health - hp).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().health = hp;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " health/HP" + ", ";
     }
 
     public void setEntropy(float e)
@@ -87,12 +100,16 @@ public class EventUtility : MonoBehaviour
 
     public void setPatrol(float p)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().patrol - p).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().patrol = p;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " patrol" + ", ";
     }
 
     public void setKarma(float k)
     {
+        string diff = Mathf.Abs(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().karma - k).ToString();
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerStats>().karma = k;
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "+" + diff + " karma" + ", ";
     }
 
     public int CalculateOutcome(params float[] outcomes)
