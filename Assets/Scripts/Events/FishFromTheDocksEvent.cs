@@ -48,7 +48,7 @@ public class FishFromTheDocksEvent : MonoBehaviour
         }
         else if (finalOutcome == 3)
         {
-            eg.setHealth(eg.getHealth() + 8);
+            eg.setCurrency(eg.getCurrency() + 25);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             return "While fishing you stumble across a huge tuna. You struggle to pull it in, and while you usually never have success reeling such a huge catch in today you have succes. You sell the catch and make some good profit for the day.";
         }

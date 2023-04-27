@@ -80,6 +80,9 @@ public class PlayerStats : MonoBehaviour
                                                                                                         "Patrol: " + patrol + "\n" +
                                                                                                         "Karma: " + karma + "\n";
 
+                // save chat gpt prompt for next scene
+                DataManager.Instance.stringToPass = GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput;
+                
                 Debug.Log(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput); // for debugging, can be deleted
             }
 

@@ -37,7 +37,7 @@ public class MedidateAtShrineEvent : MonoBehaviour
         if (finalOutcome == 0)
         {
             eg.setHealth(eg.getHealth() - 20);
-            eg.setIntelligence(eg.getIntelligence() - 4);
+            eg.setIntelligence(eg.getIntelligence() - 2);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             return "You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think";
         }
