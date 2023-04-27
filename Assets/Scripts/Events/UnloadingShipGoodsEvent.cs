@@ -22,7 +22,7 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
             return "You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work";
         }
 
-        var outcome0 = 100 * (eg.getEntropy() + eg.getEntropy());
+        var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = 10;
         var outcome2 = 10;
         var outcome3 = 2 * eg.getStrength();
@@ -34,7 +34,7 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
         {
             eg.setHealth(eg.getHealth() - 60);
             eg.setStrength(eg.getStrength() - 6);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
 
             return "You start working for a low wage, carrying boxes from the ship onto the dock storage area. Out of nowhere a lift crane swings out and knocks you down. Crates fall on top of you and you suffer broken bones as the other workers pull you out";
         }
@@ -42,20 +42,20 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
         {
             eg.setStrength(eg.getStrength() + 1);
             eg.setCurrency(eg.getCurrency() + 5);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger";
         }
         else if (finalOutcome == 2)
         {
             eg.setStrength(eg.getStrength() + 1);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "You spend all day carrying crates from the ship into the dock storage area, however you drop and ruin some of the cargo along the way. They are reimbursed from your wage, so you earn no coin for your work. You do feel stronger though";
         }
         else if (finalOutcome == 3)
         {
             eg.setStrength(eg.getStrength() + 1);
             eg.setCurrency(eg.getCurrency() + 10);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "You spend all day carrying crates from the ship into the dock storage area. You work twice as well as any other dock worker and you are rewarded for your efficiency. You gain a nice coin bonus as well as feeling stronger from all the hard work";
         }
 

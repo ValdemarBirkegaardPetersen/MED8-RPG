@@ -25,7 +25,7 @@ public class DonateToFaithEvent : MonoBehaviour
             // exit event here
         }
 
-        var outcome0 = 100 * (eg.getEntropy() + eg.getEntropy());
+        var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = 10;
         var outcome2 = 10 * eg.getPatrol();
         var outcome3 = 10 * (0.5f + (eg.getKarma() / 2));
@@ -40,27 +40,27 @@ public class DonateToFaithEvent : MonoBehaviour
             eg.setPatrol(1.0f);
             eg.setKarma(eg.getKarma() + 0.4f);
             eg.setCurrency(eg.getCurrency() - 5);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "After you donate your 5 coins to the preacher, he announces the faith has begun to fund zealots in the city to help keep the city safe and secure";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 5);
             eg.setKarma(eg.getKarma() + 0.4f);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "You participate in a sermon and personally donate 5 coins to the faith preacher. He responds very gratuitously and wishes you good luck and faith going forward";
         }
         else if (finalOutcome == 2)
         {
             eg.setKarma(eg.getKarma() + 0.2f);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             return "For unknown reasons, the sermon by the faith preacher has been cancelled. He tells you that he cannot with good conscience accept any donations for the time being, but seems appreciative nonetheless";
         }
         else if (finalOutcome == 3)
         {
             eg.setCurrency(eg.getCurrency() - 5);
             eg.setCharisma(eg.getCharisma() + 3);
-            eg.setEntropy(eg.getEntropy() + 0.025f);
+            eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() + 0.4f);
             return "You participate in a sermon and personally donate 5 coins to the faith preacher. He responds very gratuitously and is happy that you participated in the sermon. He goes on to speak very highly of your character to the other people there";
         }

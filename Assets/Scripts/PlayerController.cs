@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
      */
 
     public string chatgptInput = "";
+    
     private int chatgptIterator = 1;
     
     public string lastVisitedEvent = "";
@@ -179,6 +180,16 @@ public class PlayerController : MonoBehaviour
         var panelRectTransform = panel.GetComponent<RectTransform>();
         rct = panelRectTransform;
 
+        chatgptInput += "Using the given event log from a 2D top-down RPG, generate a creative ending for the game. " +
+        "The event log presents events in linear time, along with their story consequences and the impacted stats. " +
+        "Additionally, the player's stats at the beginning and end of the game are provided. " +
+        "Draw inspiration from the stats but avoid directly mentioning them in the ending. " +
+        "In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is " +
+        "shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. " +
+        "Trying to make a name for himself, this is his story...' \n\nBased on the events and stats, write a short conclusion including " +
+        "closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. " +
+        "The generated ending must be between 200-225 words. \n\nEvent Log: \n";
+
         currentPos = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -269,6 +280,7 @@ public class PlayerController : MonoBehaviour
             //rct.position = new Vector2(1000, 31.30f);
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                Debug.Log("test");
                 var curentPos = transform.position;
                 var collider = Physics2D.OverlapCircle(curentPos, 0.2f, interactablesLayer);
                 if (eventCollider.name != lastVisitedEvent)

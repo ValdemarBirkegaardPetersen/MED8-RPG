@@ -12,6 +12,8 @@ public class PlayerStats : MonoBehaviour
     public int strength;
     public int health;
 
+    private bool waitForDeathScene;
+    
     public float entropy;
     public float patrol;
     public float karma;
@@ -33,6 +35,8 @@ public class PlayerStats : MonoBehaviour
         karma = 0f;
 
         statsText = stats.GetComponent<Text>();
+
+        waitForDeathScene = false;
 
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "The players stats at the beginning of the game: \n";
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
@@ -63,17 +67,39 @@ public class PlayerStats : MonoBehaviour
         if (strength > 10) { strength = 10; }
 
         if (health <= 0) {
-            GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Player died at the last event. \n\nThe players stats at the end of the game: \n";
-            GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
-                                                                                                    "Currency: " + currency + "\n" +
-                                                                                                    "Strength: " + strength + "\n" +
-                                                                                                    "Charisma: " + charisma + "\n" +
-                                                                                                    "Intelligence: " + intelligence + "\n" +
-                                                                                                    "Patrol: " + patrol + "\n" +
-                                                                                                    "Karma: " + karma + "\n";
-            
-            Debug.Log(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput); // for debugging, can be deleted
-            SceneManager.LoadScene("DeathScene");
+            health = 0;
+
+            if (waitForDeathScene == false)
+            {
+                GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Player died at the last event. \n\nThe players stats at the end of the game: \n";
+                GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
+                                                                                                        "Currency: " + currency + "\n" +
+                                                                                                        "Strength: " + strength + "\n" +
+                                                                                                        "Charisma: " + charisma + "\n" +
+                                                                                                        "Intelligence: " + intelligence + "\n" +
+                                                                                                        "Patrol: " + patrol + "\n" +
+                                                                                                        "Karma: " + karma + "\n";
+
+                Debug.Log(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput); // for debugging, can be deleted
+            }
+
+            if (health <= 0)
+            {
+                waitForDeathScene = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Z) && waitForDeathScene)
+            {
+                SceneManager.LoadScene("DeathScene");
+            }
+
+
+
+        }
+
+        if (health >= 100)
+        {
+            health = 100;
         }
 
         if (entropy < 0) { entropy = 0; }
@@ -87,14 +113,37 @@ public class PlayerStats : MonoBehaviour
     }
 
 
-    public void updateStatsUI ()
+    public void updateStatsUI()
     {
+        string tempHealth = "";
+        string tempStrength = "";
+        string tempCharisma = "";
+        string tempIntelligence = "";
+
+        if (health >= 100)
+        {
+            tempHealth = " (MAX)";
+        }
+        if (strength >= 10)
+        {
+            tempStrength = " (MAX)";
+        }
+        if (charisma >= 10)
+        {
+            tempCharisma = " (MAX)";
+        }
+        if (intelligence >= 10)
+        {
+            tempIntelligence = " (MAX)";
+        }
+
+
         //var statsText = stats.GetComponent<Text>();
         statsText.text =
-            "Health: " + health + "\n" +
+            "Health: " + health + tempHealth + "\n" +
             "Currency: " + currency + "\n" +
-            "Strength: " + strength + "\n" +
-            "Charisma: " + charisma + "\n" +
-            "Intelligence: " + intelligence;
+            "Strength: " + strength + tempStrength + "\n" +
+            "Charisma: " + charisma + tempCharisma + "\n" +
+            "Intelligence: " + intelligence + tempIntelligence;
     }
 }
