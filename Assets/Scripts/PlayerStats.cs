@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
@@ -33,6 +34,15 @@ public class PlayerStats : MonoBehaviour
 
         statsText = stats.GetComponent<Text>();
 
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "The players stats at the beginning of the game: \n";
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
+                                                                                                "Currency: " + currency + "\n" +
+                                                                                                "Strength: " + strength + "\n" +
+                                                                                                "Charisma: " + charisma + "\n" +
+                                                                                                "Intelligence: " + intelligence + "\n" +
+                                                                                                "Patrol: " + patrol + "\n" +
+                                                                                                "Karma: " + karma + "\n";
+
     }
 
     // Update is called once per frame
@@ -52,7 +62,19 @@ public class PlayerStats : MonoBehaviour
         if (strength < 0) { strength = 0; }
         if (strength > 10) { strength = 10; }
 
-        if (health <= 0) { health = 1; }
+        if (health <= 0) {
+            GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Player died at the last event. \n\nThe players stats at the end of the game: \n";
+            GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
+                                                                                                    "Currency: " + currency + "\n" +
+                                                                                                    "Strength: " + strength + "\n" +
+                                                                                                    "Charisma: " + charisma + "\n" +
+                                                                                                    "Intelligence: " + intelligence + "\n" +
+                                                                                                    "Patrol: " + patrol + "\n" +
+                                                                                                    "Karma: " + karma + "\n";
+            
+            Debug.Log(GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput); // for debugging, can be deleted
+            SceneManager.LoadScene("DeathScene");
+        }
 
         if (entropy < 0) { entropy = 0; }
         if (entropy > 1) { entropy = 1; }
