@@ -1,0 +1,46 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: Trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading.
+
+
+Event: 2
+Event Name: Help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 16
+Strength: 0
+Charisma: 2
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+After travelling a long and arduous journey, the lone wanderer arrived at Kingstone with big dreams of making a name for himself. But fate seemed to have other plans for him. Despite his best efforts, the wanderer's reputation became tarnished in the city due to his aggressive trading at the market.
+
+Things only got worse when he caught a debilitating plague from his farming work, which resulted in his health plummeting to an all-time low. Unfortunately, the wanderer couldn't overcome the illness and eventually met his demise.
+
+The people of Kingstone mourned the loss of the wanderer, albeit he was not well-known for the right reasons. However, the wanderer's last act of buying and selling wares at the market had left behind a small fortune. The wanderer's generosity and kindness were remembered as many of the city's poor inhabitants were the recipients of his wealth.
+
+The wanderer's story became a lesson for the people of Kingstone to walk the right path and to always remember that a good reputation was worth more than all the riches in the world. Though his dreams of making a name for himself were cut short, the wanderer had still left a lasting impact on the city, and his memory lived on in the hearts of those he'd helped.

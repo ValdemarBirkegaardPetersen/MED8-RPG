@@ -1,0 +1,68 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: Trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 2
+Event Name: Help farmer collect his harvest
+Stat changes from event: +13 gold, 
+Event Outcome: You start working and notice the farm could use some improvements. Not only do you collect various vegetables for the farmer, but you also give him some tips about agriculture for better harvest in the future. He thanks you and gives you a bonus for the tip
+
+
+Event: 3
+Event Name: Meditate at holy shrine
+Stat changes from event: +1 intelligence, 
+Event Outcome: You spend hours reflecting on your life choices and what you could have done differently. You feel slightly wiser as a result
+
+
+Event: 4
+Event Name: Unload ship goods at the dock
+Stat changes from event: +1 strength, +5 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger
+
+
+Event: 5
+Event Name: Catch fish at the docks
+Stat changes from event: +25 gold, 
+Event Outcome: While fishing you stumble across a huge tuna. You struggle to pull it in, and while you usually never have success reeling such a huge catch in today you have succes. You sell the catch and make some good profit for the day.
+
+
+Event: 6
+Event Name: Hunt for game in the forest
+Stat changes from event: -65 health/HP, -4 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 51
+Strength: 0
+Charisma: 3
+Intelligence: 4
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+In the end, the wanderer's story came to a tragic end. Despite all his hard work and determination, he fell victim to the brutal forest surroundings. Although he may have not made a name for himself in the city of Kingstone, his legacy will be remembered as a symbol of perseverance and courage. His kindness towards the farmer and his wisdom from the holy shrine will forever be imprinted in the people's memories.
+
+The wanderer's final moments were marked by bravery and sacrifice as the hunters tried to save him, but it was too late. They were able to bring him back to the city but all too aware that his wounds were too severe. After his passing, the people of Kingstone honored him with a small statue near the docks as a token of their appreciation for his contributions to the community.
+
+It was said that his fishing skills never failed him, and he caught the biggest tuna that the locals had ever seen. They also speak of his fighting spirit and his strength, as shown during his time at the dock. Above all, his wisdom and kindness shone through as the city folk cherished his final moments. He may be gone, but his spirit lives on through the people of Kingstone.

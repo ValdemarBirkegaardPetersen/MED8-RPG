@@ -1,8 +1,10 @@
 using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -14,18 +16,20 @@ public class EndingGPT : MonoBehaviour
     private string baseText = "Generating ending for the story";
     private int dotCount = 0;
 
-    private const string API_KEY = "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";
+    private const string API_KEY = "sk-TTsXySNEN6pKOM2lYdoAT3BlbkFJY02VbQWtboa8TkrPSjV8123123";
     private const string API_URL = "https://api.openai.com/v1/chat/completions";
 
     private string prompt_input = "";
 
     public bool gptDone;
 
+    private string textForLogging;
 
     void Start()
     {
         prompt_input = DataManager.Instance.stringToPass;
         gptDone = false;
+        textForLogging = "";
         StartCoroutine(SendRequestToChatGPT(prompt_input));
     }
 
@@ -87,6 +91,7 @@ public class EndingGPT : MonoBehaviour
 
             Debug.Log(messageDict["content"]);
             loadResponseGPT(messageDict["content"].ToString());
+            textForLogging = messageDict["content"].ToString();
             textMeshPro.text = messageDict["content"].ToString();
 
         }
@@ -94,8 +99,18 @@ public class EndingGPT : MonoBehaviour
         {
             Debug.LogError($"Error: {request.error}");
         }
-
-
     }
 
+    private void OnApplicationQuit()
+    {
+        var id = System.Guid.NewGuid().ToString();
+        string path = Application.dataPath + "/../saved_text_" + id + ".txt"; // Change the file path as needed
+
+        // Create a new file and write the text to it
+        using (StreamWriter writer = new StreamWriter(path))
+        {
+            writer.Write("Prompt:\n" + DataManager.Instance.stringToPass + "\n\nGenerated Ending:\n" + textForLogging);
+            Debug.Log("Saved to " + path);
+        }
+    }
 }
