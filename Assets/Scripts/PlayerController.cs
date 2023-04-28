@@ -284,7 +284,7 @@ public class PlayerController : MonoBehaviour
         if (eventCollider.bounds.Contains(transform.position))
         {
             returnbool = true;
-            textMeshPro.text = "Press 'Z' to start the '" + eventCollider.name + "' event";
+            textMeshPro.text = "Press 'Z' to " + eventCollider.name;
 
             //rct.position = new Vector2(1000, 31.30f);
             if (Input.GetKeyDown(KeyCode.Z))

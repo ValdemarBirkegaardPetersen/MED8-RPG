@@ -1,0 +1,99 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 2
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 3
+Event Name: help farmer collect his harvest
+Stat changes from event: 
+Event Outcome: The farmer looks at you and laughs. 'You don't look like you would be of much help carrying anything', he says apologetically
+
+
+Event: 4
+Event Name: unload ship goods at the dock
+Stat changes from event: 
+Event Outcome: You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work
+
+
+Event: 5
+Event Name: steal ship supplies
+Stat changes from event: +15 gold, +0.4 patrol, -0.2 karma, 
+Event Outcome: You attempt to steal some supplies, and although you are detected you manage to escape with some goods which you sell for a profit on the black market. Patrols in the city are increased.
+
+
+Event: 6
+Event Name: catch fish at the docks
+Stat changes from event: +75 gold, 
+Event Outcome: You spend hours fishing with no luck. But then all of a sudden you see a glimpse of gold in the water and attempt to hook it with your fishing rod. You fish it up and uncover an ancient golden idol. You sell it for 75 coins to the highest bidder
+
+
+Event: 7
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +5 strength, 
+Event Outcome: The blacksmith forges up some steel armor, fitted perfectly for you. While it is still not a full set of armor, the weight and resistance of the armor increases your physical strength and resistance
+
+
+Event: 8
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new.
+
+
+Event: 9
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +4 strength, -2 charisma, 
+Event Outcome: Because of the increased amount of guards patrolling the city recently, the blacksmith has a lack of quality steel. You pay him 25 coins for some armor and he gives you a piece of rusty iron armor. While not very pretty, this armor strengthens you as a whole
+
+
+Event: 10
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -1 gold, +0.2 karma, 
+Event Outcome: You give the beggar a coin. He thanks you and wishes you good fortune going forward
+
+
+Event: 11
+Event Name: attend illegal gambling (10 coins)
+Stat changes from event: -46 gold, -40 health/HP, 
+Event Outcome: You sit down at a table and you are joined by an infamous known mob boss. With no way to withdraw you start playing gambling all your money away. All of a sudden you find yourself in huge debt to the boss unable to pay him. They beat you up and tell you to get lost. You end up bruised and bleeding on the street
+
+
+Event: 12
+Event Name: mine for ore
+Stat changes from event: -50 health/HP, -3 charisma, 
+Event Outcome: You grab a pickaxe and start mining. After a while the ground starts shaking with tremors and all of a sudden a sinkhole appears underneath you. You fall down and experience multiple blunt impacts on your body and you break your jaw. After getting helped out, the hole is filled and you are left with a dislocated jaw, a speech impediment, and serious injuries on your body
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 9
+Charisma: 0
+Intelligence: 4
+Patrol: 0.4
+Karma: 0
+
+
+Generated Ending:
