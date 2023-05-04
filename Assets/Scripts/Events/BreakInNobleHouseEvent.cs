@@ -12,7 +12,7 @@ public class BreakInNobleHouseEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getPatrol() > 0.5f)
+        if (eg.getPatrol() > 0.9f)
         {
             return "Because of recent events, the nobleman has decided to hire an abundance of personal guards to protect his belongings. There is no way you would be able to steal from him.";
             // exit event here

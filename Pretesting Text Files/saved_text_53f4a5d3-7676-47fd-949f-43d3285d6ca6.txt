@@ -1,0 +1,92 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.
+
+
+Event: 2
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 3
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 4
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -3 gold, 
+Event Outcome: You pay the fortune teller 3 coins and she tells you that your fate is out of your hands, but you can still influence how you are remembered. She tells you that your past actions have consequences, and that your future is shrouded by mystery and adventure
+
+
+Event: 5
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -30 gold, -3 intelligence, 
+Event Outcome: You go and order an ale which you quickly finish. You can't stop yourself from getting another. One ale turns into two, which turns into three and before you know it. You wake up having sparse memory of the night prior. You spent a total of 30 coins and now have a massive headache making it hard to think.
+
+
+Event: 6
+Event Name: meditate at holy shrine
+Stat changes from event: -0.5 karma, 
+Event Outcome: You spend hours meditating at the shrine, however your thoughts are very restless and intense. After the meditation you end up feeling much more anxious, untrusting and deceptive than before
+
+
+Event: 7
+Event Name: unload ship goods at the dock
+Stat changes from event: +1 strength, +10 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. You work twice as well as any other dock worker and you are rewarded for your efficiency. You gain a nice coin bonus as well as feeling stronger from all the hard work
+
+
+Event: 8
+Event Name: catch fish at the docks
+Stat changes from event: +25 gold, 
+Event Outcome: While fishing you stumble across a huge tuna. You struggle to pull it in, and while you usually never have success reeling such a huge catch in today you have succes. You sell the catch and make some good profit for the day.
+
+
+Event: 9
+Event Name: steal ship supplies
+Stat changes from event: -20 gold, -40 health/HP, 
+Event Outcome: You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help.
+
+
+Event: 10
+Event Name: unload ship goods at the dock
+Stat changes from event: -60 health/HP, -6 strength, 
+Event Outcome: You start working for a low wage, carrying boxes from the ship onto the dock storage area. Out of nowhere a lift crane swings out and knocks you down. Crates fall on top of you and you suffer broken bones as the other workers pull you out
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 15
+Strength: 0
+Charisma: 3
+Intelligence: 0
+Patrol: 0
+Karma: -0.5
+
+
+Generated Ending:
+After months of wandering around the city of Kingstone, the lone wanderer finally gained fame - although not through the best means. Despite his humble beginnings, the tavern tales and dockside gossip glorified his poor decisions. His foray into gambling and alcohol has been admired by some, while others have dubbed him as reckless and foolish.
+
+Though remembered for his missteps by some, others fondly recall his time as a dock worker, known for his brute strength and willingness to work hard. Though the city lost a promising worker in the cruel, final event, his reputation was a mixed bag of flashy, sometimes-insidious tales.
+
+Years later, locals began to forget the wanderer's brief chapter in Kingstone's history, settling his legacy with themes of missed potential and legend. Even as his name fades from the memories of others, the wanderer's choices and experiences serve as a reminder of the harsh realities of life, and the importance of constant vigilance in a bustling city.

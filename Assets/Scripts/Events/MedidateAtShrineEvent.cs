@@ -12,7 +12,7 @@ public class MedidateAtShrineEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getPatrol() > 0.75f)
+        if (eg.getPatrol() > 0.8f)
         {
             return "You want to sit quietly and meditate, but there is too much noise from the rabble with the amount of guards patrolling and shouting";
             // exit event here

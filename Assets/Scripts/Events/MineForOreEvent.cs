@@ -12,7 +12,7 @@ public class MineForOreEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getStrength() < 4)
+        if (eg.getStrength() < 3)
         {
             return "You attempt to lift a pickaxe but it is much too heavy for you";
             // exit event here

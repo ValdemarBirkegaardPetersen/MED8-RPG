@@ -13,10 +13,10 @@ public class EndingGPT : MonoBehaviour
     public TextMeshProUGUI textMeshPro;
     public float changeInterval = 0.5f; // the interval between string changes in seconds
 
-    private string baseText = "Generating ending for the story";
+    private string baseText = "Please wait";
     private int dotCount = 0;
 
-    private const string API_KEY = "sk-TTsXySNEN6pKOM2lYdoAT3BlbkFJY02VbQWtboa8TkrPSjV8123123";
+    private const string API_KEY = "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";
     private const string API_URL = "https://api.openai.com/v1/chat/completions";
 
     private string prompt_input = "";

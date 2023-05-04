@@ -1,0 +1,114 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -2 gold, +1 intelligence, 
+Event Outcome: You buy an ale and start making conversation with the other tavern customers. You hear about their stories and learn a couple of life lessons.
+
+
+Event: 2
+Event Name: participate in acedemic research
+Stat changes from event: -3 charisma, +1 intelligence, 
+Event Outcome: You read through some books, but accidentally venture into some illegal fields of research. Caught but the fascination of your research you delve too deeply and are caught by your peers. They discard your research and they brand you as a despicable academic, spreading a poor reputation throughout the city
+
+
+Event: 3
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, +1 charisma, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now
+
+
+Event: 4
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -6 gold, -5 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice your clothes, shoes and money have been stolen. You find some rags on the street you decide to wear as it is better than nothing
+
+
+Event: 5
+Event Name: meditate at holy shrine
+Stat changes from event: +1 intelligence, 
+Event Outcome: You spend hours reflecting on your life choices and what you could have done differently. You feel slightly wiser as a result
+
+
+Event: 6
+Event Name: participate in acedemic research
+Stat changes from event: 
+Event Outcome: As you are about to enter the institute you are escorted off the grounds. 'Get out of here, we don't want your kind here, you're making us look bad' the staff says
+
+
+Event: 7
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +7 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 8
+Event Name: catch fish at the docks
+Stat changes from event: +5 gold, -1 charisma, 
+Event Outcome: You spend hours fishing. Although you return smelling like fish and sewage, you manage to sell the catch for 5 gold profit
+
+
+Event: 9
+Event Name: unload ship goods at the dock
+Stat changes from event: +1 strength, +5 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger
+
+
+Event: 10
+Event Name: catch fish at the docks
+Stat changes from event: +5 gold, -1 charisma, 
+Event Outcome: You spend hours fishing. Although you return smelling like fish and sewage, you manage to sell the catch for 5 gold profit
+
+
+Event: 11
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -15 gold, -5 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice your clothes, shoes and money have been stolen. You find some rags on the street you decide to wear as it is better than nothing
+
+
+Event: 12
+Event Name: get a new haircut (2 coins)
+Stat changes from event: 
+Event Outcome: We appreciate your business, but please come back when you can afford it
+
+
+Event: 13
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, -0 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 14
+Event Name: hunt for game in the forest
+Stat changes from event: -65 health/HP, -4 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 6
+Charisma: 0
+Intelligence: 6
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+After weeks of hearing whispers around the city, it became clear that the wanderer was nowhere to be found. Most assumed he had left town, unable to make a name for himself. But rumors suggested otherwise. It was said that he had ventured into the forest, trying to hunt for game. Unfortunately, a ferocious bear had got the better of him, leaving him in a state beyond repair. 
+
+Despite his unfortunate end, the wanderer's legacy lived on. Although known as the strange loner who would perform strange rituals, the city would fondly remember him for his profound intelligence. His unusual habits drew those who wanted to expand their minds and he became the subject of much speculation. His final act of hunting might have been what did him in, and even still, people marveled at his incredible strength. While he may have left Kingstone in a near-unrecognizable state, the wanderer left an unforgettable mark on the city's people, who looked at him with a sense of both disbelief and admiration. A complex and enigmatic character, the wanderer would never be forgotten for his wisdom and his final remarkable strength.

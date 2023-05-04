@@ -1,0 +1,126 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 2
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -2 gold, +1 intelligence, 
+Event Outcome: You buy an ale and start making conversation with the other tavern customers. You hear about their stories and learn a couple of life lessons.
+
+
+Event: 3
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 4
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however
+
+
+Event: 5
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -8 gold, +2 charisma, 
+Event Outcome: One ale becomes a few and you end up drinking and having a good time with the other tavern customers all night. You wake up the next day slightly hung over, but with some great memories.
+
+
+Event: 6
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however
+
+
+Event: 7
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 8
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: 
+Event Outcome: You think this bakery is a charity? Come back when you have more coins
+
+
+Event: 9
+Event Name: mine for ore
+Stat changes from event: 
+Event Outcome: You attempt to lift a pickaxe but it is much too heavy for you
+
+
+Event: 10
+Event Name: attend noble garden party
+Stat changes from event: -20 health/HP, 
+Event Outcome: While wining and dining with the other guests, all of a sudden a fire is started and chaos spreads among the guests. As it turns out some rebelling arsonists are setting the party ablaze as a political movement. As you escape you manage to catch a few burns.
+
+
+Event: 11
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: 
+Event Outcome: Oh, you don't have any coin to spare? perhaps you should be the one begging ha ha ha!
+
+
+Event: 12
+Event Name: read at library
+Stat changes from event: +3 intelligence, -1 strength, -10 health/HP, 
+Event Outcome: You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge.
+
+
+Event: 13
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 14
+Event Name: get a new haircut (2 coins)
+Stat changes from event: 
+Event Outcome: We appreciate your business, but please come back when you can afford it
+
+
+Event: 15
+Event Name: steal ship supplies
+Stat changes from event: -20 gold, -40 health/HP, 
+Event Outcome: You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 1
+Charisma: 5
+Intelligence: 5
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+As the lone wanderer stumbled through the streets of Kingstone, he couldn't help but feel defeated. His journey had led him to this city, hoping to make a name for himself, but instead, he found himself broken and penniless. He had made some bad deals at the market and spent too much time drinking ale at the local tavern.
+
+He tried mining for ore, hoping to make some money, but all he found was malnourishment and sickness. Even attending a noble garden party became a tragedy when arsonists set the party ablaze.
+
+But the final straw was when he attempted to steal ship supplies and was beaten up, left bleeding in the street. The lone wanderer couldn't take it anymore and succumbed to his injuries, passing away in the street.
+
+However, his time in Kingstone was not in vain. Even with his tragic ending, people would remember him for his charisma and intelligence, always willing to strike up a conversation and learn from others. They would remember his determination, attempting to make a living any way he could.
+
+Although he may not have succeeded in the traditional sense, his story would be told as a cautionary tale to never give up hope, to always strive for greatness, and to learn from the mistakes of the past. Rest in peace, wanderer.

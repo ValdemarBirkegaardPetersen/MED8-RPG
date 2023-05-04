@@ -12,7 +12,7 @@ public class VisitNobleGardenPartyEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getCharisma() < 6)
+        if (eg.getCharisma() < 5)
         {
             return "You approach the party but you are escorted off the grounds because they don't recognize you as a noble person";
             // exit event here

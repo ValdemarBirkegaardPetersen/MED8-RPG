@@ -18,11 +18,13 @@ public class TradeSpicesEvent : MonoBehaviour
             // exit event here
         }
 
+
         if (eg.getCharisma() < 2)
         {
             return "As you are about the do some trading you notice all the traders scoffing at you. No one wants to trade with you, so you decide to leave instead";
             // exit event here
         }
+
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = 10;

@@ -12,7 +12,7 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getPatrol() > 0.4f)
+        if (eg.getPatrol() > 0.6f)
         {
             return "You offer to work unload the ships good, but the guards are on strict orders not to let anyone touch the goods, because of recent criminal activities in the city.";
         }

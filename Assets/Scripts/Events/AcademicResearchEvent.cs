@@ -12,13 +12,13 @@ public class AcademicResearchEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getIntelligence() < 4)
+        if (eg.getIntelligence() < 3)
         {
             return "You look around the university and see scholars of all different types. You do not seem qualified to be able to research at the institute so you leave again. Perhaps you will return when you are more capable";
             // exit event here
         }
 
-        if (eg.getCharisma() <= 2)
+        if (eg.getCharisma() == 0)
         {
             return "As you are about to enter the institute you are escorted off the grounds. 'Get out of here, we don't want your kind here, you're making us look bad' the staff says";
             // exit event here

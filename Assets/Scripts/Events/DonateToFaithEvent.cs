@@ -13,7 +13,7 @@ public class DonateToFaithEvent : MonoBehaviour
         eg = new EventUtility();
 
 
-        if (eg.getPatrol() > 0.4f)
+        if (eg.getPatrol() > 0.6f)
         {
             return "The preacher is under protection from multiple guards because of recent events. No one is allowed to approach him, so you cannot give him a donation";
             // exit event here
@@ -37,7 +37,7 @@ public class DonateToFaithEvent : MonoBehaviour
 
         if (finalOutcome == 0)
         {
-            eg.setPatrol(1.0f);
+            eg.setPatrol(0.65f);
             eg.setKarma(eg.getKarma() + 0.4f);
             eg.setCurrency(eg.getCurrency() - 5);
             eg.setEntropy(eg.getEntropy() + 0.05f);

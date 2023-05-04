@@ -12,7 +12,7 @@ public class StealShipSuppliesEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getPatrol() > 0.8f)
+        if (eg.getPatrol() > 0.7f)
         {
             return "The docks are patrolled by too many guards. You won't be able to steal anything undetected.";
             // exit event here

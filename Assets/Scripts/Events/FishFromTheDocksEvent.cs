@@ -12,7 +12,7 @@ public class FishFromTheDocksEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getPatrol() > 0.8f)
+        if (eg.getPatrol() > 0.95f)
         {
             return "Recent illegal activities have resulted in the fishing spot being restricted to civilians";
             // exit event here

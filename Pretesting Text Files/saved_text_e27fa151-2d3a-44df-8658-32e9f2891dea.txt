@@ -1,0 +1,136 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 2
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+
+Event: 3
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -10 gold, +1 intelligence, 
+Event Outcome: You get an ale and someone invites you to play a game of chess. You play for fun to begin with, but you start getting competitive and play for money. With an increasing audience watching you play you manage to lose multiple times losing a bit of money.
+
+
+Event: 4
+Event Name: help farmer collect his harvest
+Stat changes from event: 
+Event Outcome: The farmer looks at you and laughs. 'You don't look like you would be of much help carrying anything', he says apologetically
+
+
+Event: 5
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -1 gold, +0.2 karma, 
+Event Outcome: You give the beggar a coin. He thanks you and wishes you good fortune going forward
+
+
+Event: 6
+Event Name: read at library
+Stat changes from event: 
+Event Outcome: You grab a book and attempt to read it, but you just cannot make sense of any of the letters
+
+
+Event: 7
+Event Name: perform burglary at noble house
+Stat changes from event: -10 gold, -2 strength, -10 health/HP, +0.5 patrol, -0.2 karma, 
+Event Outcome: You slip into the nobles house but after accidentally making some noise you are caught and unable to escape. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.
+
+
+Event: 8
+Event Name: sabotage guard armory
+Stat changes from event: -0.5 patrol, -0.4 karma, 
+Event Outcome: The guard armory has been left completely empty as all the guards are out on patrol. You successfully sabotage the weaponry and storage. The city now has fewer resources to support the guard patrols.
+
+
+Event: 9
+Event Name: rob the bank
+Stat changes from event: -20 gold, -2 strength, -10 health/HP, +0.8 patrol, -0.2 karma, 
+Event Outcome: You plan the robbery heist with a crew, but due to poor planning you trip the alarm system and are caught. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food.
+
+
+Event: 10
+Event Name: catch fish at the docks
+Stat changes from event: -40 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can
+
+
+Event: 11
+Event Name: steal ship supplies
+Stat changes from event: 
+Event Outcome: The docks are patrolled by too many guards. You won't be able to steal anything undetected.
+
+
+Event: 12
+Event Name: unload ship goods at the dock
+Stat changes from event: 
+Event Outcome: You offer to work unload the ships good, but the guards are on strict orders not to let anyone touch the goods, because of recent criminal activities in the city.
+
+
+Event: 13
+Event Name: meditate at holy shrine
+Stat changes from event: 
+Event Outcome: You sit down to meditate, but you cannot find peace of mind, with constant negative thoughts running through your mind
+
+
+Event: 14
+Event Name: help farmer collect his harvest
+Stat changes from event: 
+Event Outcome: The farmer looks at you and laughs. 'You don't look like you would be of much help carrying anything', he says apologetically
+
+
+Event: 15
+Event Name: perform burglary at noble house
+Stat changes from event: -10 gold, -2 strength, -10 health/HP, +0.4999999 patrol, -0.2 karma, 
+Event Outcome: You slip into the nobles house but after accidentally making some noise you are caught and unable to escape. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.
+
+
+Event: 16
+Event Name: sabotage guard armory
+Stat changes from event: -0.5 patrol, -0.4 karma, 
+Event Outcome: The guard armory has been left completely empty as all the guards are out on patrol. You successfully sabotage the weaponry and storage. The city now has fewer resources to support the guard patrols.
+
+
+Event: 17
+Event Name: perform burglary at noble house
+Stat changes from event: -40 health/HP, 
+Event Outcome: You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 0
+Charisma: 3
+Intelligence: 1
+Patrol: 0.5
+Karma: -1
+
+
+Generated Ending:
+The lone wanderer's story had ended in tragedy. His pursuit of becoming someone important led him down a path of destruction and chaos. He spent his time burglarizing noble houses and robbing banks, despite all the warnings of those who tried to help him. As word spread of his actions, he became known as a thief, a menace to the city.
+
+Despite his charisma, the wanderer's karma had become so negative that even beggars avoided him. The once healthy wanderer had become a malnourished and weakened criminal. But there is one thing that he will be remembered for: his final act of foolishness.
+
+In his attempt to steal from yet another noble house, he triggered a trap that poisoned him. As he lay there dying, he regretted all the wrong turns that he had taken. In the end, the only positive thing that could be said of him was that he had helped a farmer to collect his harvest, once.
+
+The city tried to forget the wanderer's story, but his name lingered like a warning to those who dared to follow the same path. May his story and his fate be a reminder to all those who seek to gain glory in ways that hurt others.

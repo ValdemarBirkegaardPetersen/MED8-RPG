@@ -12,7 +12,7 @@ public class ReadAtLibraryEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getIntelligence() < 3)
+        if (eg.getIntelligence() < 2)
         {
             return "You grab a book and attempt to read it, but you just cannot make sense of any of the letters";
             // exit event here

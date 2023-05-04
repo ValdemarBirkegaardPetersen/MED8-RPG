@@ -1,0 +1,84 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 2
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +15 health/HP, 
+Event Outcome: The owner seems delighted to see you. They smile at you and gives you a piece of bread free of charge. You eat it and feel restored
+
+
+Event: 3
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 4
+Event Name: meditate at holy shrine
+Stat changes from event: +1 intelligence, 
+Event Outcome: You spend hours reflecting on your life choices and what you could have done differently. You feel slightly wiser as a result
+
+
+Event: 5
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, -1 charisma, -1 intelligence, -25 health/HP, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut
+
+
+Event: 6
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -1 gold, +0.2 karma, 
+Event Outcome: You give the beggar a coin. He thanks you and wishes you good fortune going forward
+
+
+Event: 7
+Event Name: hunt for game in the forest
+Stat changes from event: -65 health/HP, -4 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones
+
+
+Event: 8
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 6
+Strength: 0
+Charisma: 2
+Intelligence: 1
+Patrol: 0
+Karma: 0.2
+
+
+Generated Ending:
+After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...
+
+The wanderer, although he had his ups and downs, eventually found his way in the city of Kingstone. He tried his hand at trading, hunting, and even meditation. However, his uneventful life was about to meet an untimely end. 
+
+One day, while meditating at the shrine, the wanderer had a negative experience which led to him collapsing, losing his consciousness. He never woke up, and the city mourned his loss.
+
+The wanderer was not famed for his heroic feats or his amazing achievements, but he will be remembered as a kind soul who tried his best to help others. His final karma score of 0.2, although not high, is a testament to his selfless act of helping a beggar in need.
+
+The city of Kingstone will remember him fondly, and his legacy will live on in their memories. His final stats showed a decline in almost every aspect, but it does not matter. What matters is the impact he made on the world around him. May he rest in peace.

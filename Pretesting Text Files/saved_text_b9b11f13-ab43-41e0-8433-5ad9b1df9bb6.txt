@@ -1,0 +1,114 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: meditate at holy shrine
+Stat changes from event: +1 intelligence, 
+Event Outcome: You spend hours reflecting on your life choices and what you could have done differently. You feel slightly wiser as a result
+
+
+Event: 2
+Event Name: read at library
+Stat changes from event: +3 intelligence, -1 strength, -10 health/HP, 
+Event Outcome: You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge.
+
+
+Event: 3
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +8 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 4
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however
+
+
+Event: 5
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 6
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -3 gold, 
+Event Outcome: You pay the fortune teller 3 coins and she tells you that your fate is out of your hands, but you can still influence how you are remembered. She tells you that your past actions have consequences, and that your future is shrouded by mystery and adventure
+
+
+Event: 7
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight loss
+
+
+Event: 8
+Event Name: unload ship goods at the dock
+Stat changes from event: +1 strength, +5 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger
+
+
+Event: 9
+Event Name: catch fish at the docks
+Stat changes from event: +25 gold, 
+Event Outcome: While fishing you stumble across a huge tuna. You struggle to pull it in, and while you usually never have success reeling such a huge catch in today you have succes. You sell the catch and make some good profit for the day.
+
+
+Event: 10
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +3 strength, +3 charisma, 
+Event Outcome: The blacksmith forges up some gold trimmed steel armor perfectly fitted for you. While not as practically efficient as raw steel armor, wearing the armor you feel stronger, more protected, and more respected
+
+
+Event: 11
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight loss
+
+
+Event: 12
+Event Name: attend noble garden party
+Stat changes from event: +1 strength, +20 health/HP, 
+Event Outcome: You waste no time on the guests and spend the entire night feasting on the amazing food. You wake up the next day nourished and full of energy.
+
+
+Event: 13
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, -0 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 14
+Event Name: hunt for game in the forest
+Stat changes from event: -65 health/HP, -4 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 6
+Strength: 6
+Charisma: 6
+Intelligence: 7
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+The lone wanderer had made a name for himself in Kingstone, inspiring both awe and fear. His intelligence and strength were legendary, some believed that he was blessed by the gods, however, others feared his power. He was remembered for his exploits, reviled by some, and admired by others. However, his life came to an end while hunting in the forest. He fought a bear with incredible courage, but the bear overpowered him, injuring him beyond recovery. His body was carried back to Kingstone, where he was laid to rest with honor. 
+
+The city held a grand funeral for the wanderer, and the people mourned him as a hero who had lost his life in search of adventure. His intelligence and strength were mentioned in tales for years to come, and the children of the city played games where they pretended to be the legendary wanderer. However, his reckless behavior was not forgotten, and people often spoke of how his life could have been different if he had made better choices. Nonetheless, the memory of the lone wanderer remained alive in the city of Kingstone for many years to come.

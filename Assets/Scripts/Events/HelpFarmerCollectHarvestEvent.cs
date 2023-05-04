@@ -11,11 +11,12 @@ public class HelpFarmerCollectHarvestEvent : MonoBehaviour
     public string Run()
     {
         eg = new EventUtility();
-
-        if (eg.getCharisma() < 2)
+/*
+        if (eg.getCharisma() < 1)
         {
             return "The farmer looks like he would need some help with collecting his harvest, however he refuses your help because he recognizes you as a disreputable person";
         }
+        */
 
         if (eg.getStrength() < 2)
         {
@@ -24,7 +25,7 @@ public class HelpFarmerCollectHarvestEvent : MonoBehaviour
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = eg.getStrength();
-        var outcome2 = 10 - eg.getStrength();
+        var outcome2 = 10;
         var outcome3 = eg.getIntelligence();
 
         var finalOutcome = eg.CalculateOutcome(outcome0, outcome1, outcome2, outcome3);

@@ -1,0 +1,142 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading.
+
+
+Event: 2
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -3 gold, 
+Event Outcome: You pay the fortune teller 3 coins and she tells you that your fate is out of your hands, but you can still influence how you are remembered. She tells you that your past actions have consequences, and that your future is covered in a dark shroud
+
+
+Event: 3
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -2 gold, +1 intelligence, 
+Event Outcome: You buy an ale and start making conversation with the other tavern customers. You hear about their stories and learn a couple of life lessons.
+
+
+Event: 4
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however
+
+
+Event: 5
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 6
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 7
+Event Name: attend noble garden party
+Stat changes from event: 
+Event Outcome: You approach the party but you are escorted off the grounds because they don't recognize you as a noble person
+
+
+Event: 8
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: -25 health/HP, -8 gold, 
+Event Outcome: Just as you are about to invest your 5 coins, an armed robbery takes place and all the bank employees and visitors are robbed for all the gold they have. The robbers seem to recognize you. You attempt to resist but you suffer a sword wound and are left with no coin
+
+
+Event: 9
+Event Name: mine for ore
+Stat changes from event: 
+Event Outcome: You attempt to lift a pickaxe but it is much too heavy for you
+
+
+Event: 10
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: 
+Event Outcome: Looking around, a bunch of traders are selling and buying merchandise. You feel like you could make a profit doing some trading but you need at least 3 coins to get the ball rolling
+
+
+Event: 11
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience
+
+
+Event: 12
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 13
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience
+
+
+Event: 14
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 15
+Event Name: participate in acedemic research
+Stat changes from event: 
+Event Outcome: You look around the university and see scholars of all different types. You do not seem qualified to be able to research at the institute so you leave again. Perhaps you will return when you are more capable
+
+
+Event: 16
+Event Name: get a new haircut (2 coins)
+Stat changes from event: 
+Event Outcome: We appreciate your business, but please come back when you can afford it
+
+
+Event: 17
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new.
+
+
+Event: 18
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience
+
+
+Event: 19
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 0
+Charisma: 2
+Intelligence: 1
+Patrol: 0
+Karma: 0
+
+
+Generated Ending:
+After many days of wandering alone, gaining wealth, losing it to robbers, and experiencing both the ups and downs of life, the wanderer's journey has finally ended. Though he was not able to make a name for himself in Kingstone, he will be remembered for his insatiable thirst for knowledge. The wanderer was always seen reading, participating in academic research, and meditating at holy shrines. He sought to better himself, and the people around him. It was this same thirst of knowledge, however, that ultimately led to his downfall. His curiosity led him to a cursed book that he could not resist. The book drained him physically and mentally, ultimately leading to his death. Despite this tragic ending, the wanderer will be remembered as a kind and intelligent person, who constantly sought to better himself and the world around him. The people of Kingstone will speak of his endless pursuit of knowledge and will always have a fond memory of him.
