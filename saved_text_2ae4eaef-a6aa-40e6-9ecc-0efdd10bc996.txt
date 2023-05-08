@@ -1,0 +1,74 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new. 
+(Intelligence +1)
+
+
+Event: 2
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +6 intelligence, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Intelligence +10)
+
+
+Event: 3
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored. 
+(Health +15, Currency -3)
+
+
+Event: 4
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +7 strength, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Strength +10)
+
+
+Event: 5
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored. 
+(Health +25, Currency -2)
+
+
+Event: 6
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -80 health/HP, -1 karma, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. All of a sudden your surroundings start to shake, and while your instinct tells you to stop, you succumb to the lust for power. Dark shrouded shadows enter your body and start eating you from within. After the ritual you are nothing but a pile of dust. 
+(Health -100)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 5    Range: 0(poor)-50+(rich)
+Strength: 10    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 10    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: -1    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+As the news of the wanderer's death spread, the people of Kingstone remembered him as a troubled soul seeking knowledge and power. The unsanctioned dark rituals he performed left a mark on the city, and many warned others never to dabble in the arcane arts. 
+
+Despite all this, the wanderer's final moments were not in vain. His studies and experiments unlocked new levels of intelligence and strength within him, and he had become a force to be reckoned with. Though his charisma was lacking, he was respected for his raw power and knowledge. 
+
+The people would always remember the wanderer as a tragic character, someone who walked too close to the edge of unbridled curiosity and obsession. But perhaps his legacy could serve as a warning to those who sought the same path.
