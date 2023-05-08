@@ -11,11 +11,11 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
     public string Run()
     {
         eg = new EventUtility();
-
+/*
         if (eg.getPatrol() < 0.2f)
         {
             return "The guard armory is locked and not in use. You see no way or reason to sabotage the armory for now.";
-        }
+        } */
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = eg.getStrength();

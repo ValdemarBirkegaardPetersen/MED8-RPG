@@ -1,0 +1,157 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading. 
+(Currency -3, Currency +9, Charisma -1)
+
+
+Event: 2
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -1 gold, +0.2 karma, 
+Event Outcome: You give the beggar a coin. He thanks you and wishes you good fortune going forward. 
+(Currency -1)
+
+
+Event: 3
+Event Name: read at library
+Stat changes from event: +3 intelligence, -1 strength, -10 health/HP, 
+Event Outcome: You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge. You attempt to recover from your sprain injury as best as you can. 
+(Health -10, Strength -1, Intelligence +3)
+
+
+Event: 4
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: 
+Event Outcome: "Like what you fancy?" The blacksmith asks. Unfortunately, the blacksmith's wares cost more than you can afford so you leave. 
+(Not enough Currency)
+
+
+Event: 5
+Event Name: attend illegal gambling (10 coins)
+Stat changes from event: -10 gold, 
+Event Outcome: You play for a few games for the 10 coin buy-in, but luck is not on your side as you lose it all. 
+(Currency -10)
+
+
+Event: 6
+Event Name: attend noble garden party
+Stat changes from event: 
+Event Outcome: You approach the party but you are escorted off the grounds because they don't recognize you as a noble person. 
+(Charisma too low)
+
+
+Event: 7
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight loss. 
+(Currency -5, Currency +3)
+
+
+Event: 8
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored. 
+(Currency +1, Health +10)
+
+
+Event: 9
+Event Name: mine for ore
+Stat changes from event: 
+Event Outcome: You attempt to lift a pickaxe but it is way too heavy for you. 
+(Strength too low)
+
+
+Event: 10
+Event Name: help farmer collect his harvest
+Stat changes from event: -35 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, it does take a heavy toll on your health. 
+(Health -35)
+
+
+Event: 11
+Event Name: catch fish at the docks
+Stat changes from event: +5 gold, -1 charisma, 
+Event Outcome: You spend hours fishing. Although you return smelling like fish and sewage, you manage to sell the catch for 5 gold profit. 
+(Currency +5, Charisma -1)
+
+
+Event: 12
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -12 gold, +1 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice some of your clothes and coin have been stolen. Unlucky. 
+(Currency -5, Charisma +1, Currency -7)
+
+
+Event: 13
+Event Name: unload ship goods at the dock
+Stat changes from event: 
+Event Outcome: You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work. 
+(Strength too low)
+
+
+Event: 14
+Event Name: steal ship supplies
+Stat changes from event: -20 gold, -40 health/HP, 
+Event Outcome: You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help. 
+(Health -20, Currency -20)
+
+
+Event: 15
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience. 
+(Intelligence +1)
+
+
+Event: 16
+Event Name: meditate at holy shrine
+Stat changes from event: -0.5 karma, 
+Event Outcome: You spend hours meditating at the shrine, however your thoughts are very restless and intense. After the meditation you end up feeling much more anxious, untrusting and deceptive than before.
+
+
+Event: 17
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new. 
+(Intelligence +1)
+
+
+Event: 18
+Event Name: perform burglary at noble house
+Stat changes from event: -30 health/HP, 
+Event Outcome: You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering. 
+(Health -30)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 0    Range: 0(poor)-50+(rich)
+Strength: 2    Range: 0(weak)-10(very strong)
+Charisma: 2    Range: 0(disgusting)-10(lovely)
+Intelligence: 8    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: -0.3    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After many adventures and mishaps, the lone wanderer's legacy will be remembered in Kingstone through the stories of his unfortunate death. Despite his intentions to make a name for himself, his reputation remained tarnished due to his aggressive trading and unsuccessful attempts to attend noble parties. His strength and charisma remained low, although he managed to improve his intelligence along the way through reading and academic research. 
+
+In the end, however, his luck ran out as he attempted to burgle a noble house. The tripwire trap he triggered resulted in the release of poisonous darts, which left him feeling nauseous and alone. As he lay in the street, unable to recover from the wound, his story became a cautionary tale of the dangers of greed and recklessness. 
+
+The people of Kingstone may not celebrate his accomplishments or remember his name, but they will know the story of the lone wanderer who fell victim to his own desires. And perhaps, in that knowledge, they will learn to value wisdom and self-control above all else.

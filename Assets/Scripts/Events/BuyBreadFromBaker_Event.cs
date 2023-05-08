@@ -11,12 +11,12 @@ public class BuyBreadFromBaker_Event : MonoBehaviour
     public string Run()
     {
         eg = new EventUtility();
-
+/*
         if (eg.getEntropy() > 0.9f)
         {
             return "Due to unknown circumstances, the bakery has closed down.";
             // exit event here
-        }
+        }*/
         
         if (eg.getCurrency() < 3)
         {

@@ -1,0 +1,114 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, +20 gold, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You make some significant strides in your field and the institute sponsor you some coin to further your research. 
+(Intelligence +1, Currency +20)
+
+
+Event: 2
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +7 strength, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Strength +10)
+
+
+Event: 3
+Event Name: hunt for game in the forest
+Stat changes from event: -15 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. While carrying it back however, you are robbed by a gang of highwaymen who steal your game, and some of your coin. 
+(Currency -15)
+
+
+Event: 4
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Currency +100)
+
+
+Event: 5
+Event Name: hunt for game in the forest
+Stat changes from event: +10 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being strong enough, you manage to carry the entire deer back to the city, which you sell to the butcher for a good amount of coin. 
+(Currency +10)
+
+
+Event: 6
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +6 intelligence, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Intelligence +10)
+
+
+Event: 7
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: +2 charisma, 
+Event Outcome: As you pay the entry fee and undress, a few noble women are impressed by your physique and invite you to join them. You converse and have a good time, and they decide to pay for your bathhouse fee. 
+(Currency -5, Charisma +2, Currency +5)
+
+
+Event: 8
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, +1 charisma, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now. 
+(Currency -2, Charisma +1)
+
+
+Event: 9
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: +2 charisma, 
+Event Outcome: As you pay the entry fee and undress, a few noble women are impressed by your physique and invite you to join them. You converse and have a good time, and they decide to pay for your bathhouse fee. 
+(Currency -5, Charisma +2, Currency +5)
+
+
+Event: 10
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, +1 charisma, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now. 
+(Currency -2, Charisma +1)
+
+
+Event: 11
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -5 gold, +2 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath, and end up much cleaner and nicer smelling than before. 
+(Currency -5, Charisma +2)
+
+
+Event: 12
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -10 health/HP, -1 karma, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. All of a sudden your surroundings start to shake, and while your instinct tells you to stop, you succumb to the lust for power. Dark shrouded shadows enter your body and start eating you from within. After the ritual you are nothing but a pile of dust. 
+(Health -100)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 116    Range: 0(poor)-50+(rich)
+Strength: 10    Range: 0(weak)-10(very strong)
+Charisma: 10    Range: 0(disgusting)-10(lovely)
+Intelligence: 10    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: -1    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After travelling for many days, a lone wanderer stumbled into the city of Kingstone, trying to make a name for himself. He began participating in academic research, performing unsanctioned dark rituals, and heading to the forest to hunt for game. He stumbled upon many opportunities, from making strides in his field, to acquiring more gold, strength, and intelligence. He even visited the bathhouse and got a new haircut, and his charisma increased significantly. However, he was not content. The wanderer turned to his dark rituals once again, seeking more power and knowledge. In doing so, he sacrificed his own life; consumed by the shadows that entered his body and ate him from the inside. 
+
+In the end, the wanderer's name will forever be remembered in the city of Kingstone as an individual who searched for answers and power, but at the cost of his own life. While many showed interest in him, it was clear that he chose the path of darkness. His life may have been short, but he left a legacy of caution and mystery behind.

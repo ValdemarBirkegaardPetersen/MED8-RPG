@@ -17,10 +17,11 @@ public class PerformRitualEvent : MonoBehaviour
         {
             return "You want to perform the unsanctioned ritual, but you lack the required knowledge. \n(Intelligence too low)";
         }
+        /*
         if (eg.getKarma() > 0.0f)
         {
             return "You start to perform the ritual, but nothing happens. Reading one of the ritual books you can see that you have to be evil at heart, or the ritual cannot commence.";
-        }
+        } */
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
         var outcome1 = 20 - (2 * eg.getIntelligence());

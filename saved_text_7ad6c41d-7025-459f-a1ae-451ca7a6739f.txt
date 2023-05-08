@@ -1,0 +1,95 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -2 gold, +1 intelligence, 
+Event Outcome: You buy an ale and start making conversation with the other tavern customers. You hear about their stories and learn a couple of life lessons. 
+(Currency -2, Intelligence +1)
+
+
+Event: 2
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -3 gold, +1 intelligence, 
+Event Outcome: You pay the fortune teller 3 coins and she helps you reflect on your past. You ask questions, which she doesn't seem to answer outright, but through careful consideration and reflection you leave with a more clear mind. 
+(Currency -3, Intelligence +1)
+
+
+Event: 3
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +8 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. Using your knowledge about the current market economy, supply and demand you manage to make a lot of profit. 
+(Currency -3, Currency +11)
+
+
+Event: 4
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored. 
+(Currency +1, Health +10)
+
+
+Event: 5
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however. 
+(Strength +1)
+
+
+Event: 6
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +6 strength, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Strength +10)
+
+
+Event: 7
+Event Name: hunt for game in the forest
+Stat changes from event: -15 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. While carrying it back however, you are robbed by a gang of highwaymen who steal your game, and some of your coin. 
+(Currency -15)
+
+
+Event: 8
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Currency +100)
+
+
+Event: 9
+Event Name: hunt for game in the forest
+Stat changes from event: -45 health/HP, -2 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones. 
+(Health -45, Strength -2)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 100    Range: 0(poor)-50+(rich)
+Strength: 8    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 5    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After weeks of absence, the people of Kingstone began to worry about the lone wanderer who had stumbled into their town full of ambition. Many claimed to have seen him perform dark rituals and practice black magic, while others praised him for his resilience and wit. However, his legend grew when the town's hunters found him in the forest, mauled and severely injured by a black bear. Despite their best efforts, the town's healer was unable to save him.
+
+Regardless of the unknown circumstances that led him to his death, the wanderer's story became a cautionary tale among the locals. His intelligence and strength, once his greatest assets, were overshadowed by the rumors of his dark practices. Those who knew him personally remembered his kindness and willingness to help others, but sadly, that was not enough to save him in the end.
+
+As the years passed, the lone wanderer's story became a fable - a reminder of the dangers of seeking power beyond what is available to us. A warning against the temptations of easy riches and shortcuts to success. But for those with an adventurous spirit and an open mind, his story remained an inspiring tale of courage, perseverance, and the will to forge a path in this world.

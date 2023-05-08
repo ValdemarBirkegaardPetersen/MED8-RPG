@@ -11,11 +11,11 @@ public class IllegalGamblingEvent : MonoBehaviour
     public string Run()
     {
         eg = new EventUtility();
-
+/*
         if (eg.getCharisma() > 4)
         {
             return "The bouncer looks at you, and tells you these are back-alley games. \"Go to a dinner party where you belong fancy pants\" he says. \n(Charisma too high)";
-        }
+        }*/
         if (eg.getCurrency() < 10)
         {
             return "\"Hey chump! the buy in for the game is 10 coins. get lost!\" \n(Not enough Currency)";

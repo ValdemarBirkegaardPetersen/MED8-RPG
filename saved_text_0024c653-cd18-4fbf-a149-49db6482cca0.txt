@@ -1,0 +1,132 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -8 gold, +2 charisma, 
+Event Outcome: One ale becomes a few and you end up drinking and having a good time with the other tavern customers all night. You wake up the next day slightly hung over, but with some great memories. 
+(Currency -8, Charisma +2)
+
+
+Event: 2
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored. 
+(Currency +1, Health +10)
+
+
+Event: 3
+Event Name: mine for ore
+Stat changes from event: +5 gold, +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. Because of your strength you are able to mine a lot more ore than usual and you make some decent profit along with feeling stronger. 
+(Strength +1, Currency +5)
+
+
+Event: 4
+Event Name: attend noble garden party
+Stat changes from event: -2 charisma, 
+Event Outcome: You spend the night at the garden party, but you get a little too drunk and start making a fool of yourself. You wake up in the mud on the street next morning. You don't exactly remember what happened, but you have a feeling people aren't as enthusiastic about you as they were the day before. 
+(Charisma -2)
+
+
+Event: 5
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: +15 gold, 
+Event Outcome: Using your own expertise you take initiative on some wise short term investment opportunities. You make a huge profit over a very short period of time before pulling your funds. 
+(Currency -5, Currency +20)
+
+
+Event: 6
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience. 
+(Intelligence +1)
+
+
+Event: 7
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +6 intelligence, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Intelligence +10)
+
+
+Event: 8
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, +4 strength, 
+Event Outcome: When you enter, the alchemist informs you that the potions can be quite dangerous if you have a weak body, and instead suggests buying a strength potion. Although you don't think your body is that weak, you agree and buy the strength potion for 10 coins instead. He mixes the potion and you drink it, and although you don't feel different at first, you start feeling very strong after some time. 
+(Currency -10, Strength +4)
+
+
+Event: 9
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Currency +100)
+
+
+Event: 10
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -12 gold, +1 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice some of your clothes and coin have been stolen. Unlucky. 
+(Currency -5, Charisma +1, Currency -7)
+
+
+Event: 11
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, -1 charisma, -25 health/HP, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut. 
+(Currency -2, Charisma -1, Health -25)
+
+
+Event: 12
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -12 gold, +1 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice some of your clothes and coin have been stolen. Unlucky. 
+(Currency -5, Charisma +1, Currency -7)
+
+
+Event: 13
+Event Name: get a new haircut (2 coins)
+Stat changes from event: +1 charisma, 
+Event Outcome: The barber seems delighted to see you and seems in a good mood. "Take a seat, this one is on the house" he says. 
+(Charisma +1)
+
+
+Event: 14
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: +2 charisma, 
+Event Outcome: As you pay the entry fee and undress, a few noble women are impressed by your physique and invite you to join them. You converse and have a good time, and they decide to pay for your bathhouse fee. 
+(Currency -5, Charisma +2, Currency +5)
+
+
+Event: 15
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, -1 charisma, -25 health/HP, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut. 
+(Currency -2, Charisma -1, Health -25)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 85    Range: 0(poor)-50+(rich)
+Strength: 8    Range: 0(weak)-10(very strong)
+Charisma: 6    Range: 0(disgusting)-10(lovely)
+Intelligence: 10    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+
+Generated Ending:

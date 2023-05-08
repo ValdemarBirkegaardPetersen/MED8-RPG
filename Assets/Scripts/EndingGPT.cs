@@ -16,7 +16,7 @@ public class EndingGPT : MonoBehaviour
     private string baseText = "Please wait";
     private int dotCount = 0;
 
-    private const string API_KEY = "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";
+    private const string API_KEY = "";
     private const string API_URL = "https://api.openai.com/v1/chat/completions";
 
     private string prompt_input = "";

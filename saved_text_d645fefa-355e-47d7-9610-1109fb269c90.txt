@@ -1,0 +1,83 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: attend illegal gambling (10 coins)
+Stat changes from event: +20 gold, 
+Event Outcome: You play for a few games for the 10 coin buy-in, and have some good luck in the games as you win big. 
+(Currency -10, Currency +30)
+
+
+Event: 2
+Event Name: donate to local faith preacher (5 coins)
+Stat changes from event: -5 gold, +0.4 karma, 
+Event Outcome: You participate in a sermon and personally donate 5 coins to the faith preacher. He responds very gratuitously and wishes you good luck and faith going forward. 
+(Currency -5)
+
+
+Event: 3
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: 
+Event Outcome: You want to perform the unsanctioned ritual, but you lack the required knowledge. 
+(Intelligence too low)
+
+
+Event: 4
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +3 strength, +3 charisma, 
+Event Outcome: The blacksmith forges up some gold trimmed steel armor perfectly fitted for you. While not as practically efficient as raw steel armor, wearing the armor you feel stronger, more protected, and more respected. 
+(Currency -25, Strength +3, Charisma +3)
+
+
+Event: 5
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new. 
+(Intelligence +1)
+
+
+Event: 6
+Event Name: catch fish at the docks
+Stat changes from event: -35 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can. 
+(Health -35)
+
+
+Event: 7
+Event Name: rob the bank
+Stat changes from event: -20 gold, -1 strength, -10 health/HP, +0.8 patrol, -0.2 karma, 
+Event Outcome: You plan the robbery heist with a crew, but they betray you and lock you in the vault as they escape. You are later caught by the guards. You pay a huge fine and serve some time in jail. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. 
+(Health -10, Currency -20, Strength -1)
+
+
+Event: 8
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -55 health/HP, -1.2 karma, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. All of a sudden your surroundings start to shake, and while your instinct tells you to stop, you succumb to the lust for power. Dark shrouded shadows enter your body and start eating you from within. After the ritual you are nothing but a pile of dust. 
+(Health -100)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 0    Range: 0(poor)-50+(rich)
+Strength: 5    Range: 0(weak)-10(very strong)
+Charisma: 6    Range: 0(disgusting)-10(lovely)
+Intelligence: 4    Range: 0(stupid)-10(genius)
+Patrol: 0.8    Range: 0(no guards)-1(patrols everywhere)
+Karma: -1    Range: -1(evil)-1(good)
+
+
+Generated Ending:

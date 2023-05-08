@@ -15,6 +15,7 @@ public class DialogManager : MonoBehaviour
     public event Action OnShowDialog;
     public event Action OnHideDialog;
     public PlayerStats playerStats;
+    public GameObject blackScreen;
 
     public static DialogManager Instance { get; private set; }
 
@@ -47,7 +48,8 @@ public class DialogManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) && isTyping == false)
         {
             if(playerStats.waitForDeathScene){
-                SceneManager.LoadScene("DeathScene");
+                blackScreen.SetActive(true);
+                //SceneManager.LoadScene("DeathScene");
             }
             ++currentLine;
             if (currentLine < dialog.Lines.Count)

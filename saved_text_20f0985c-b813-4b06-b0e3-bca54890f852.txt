@@ -1,0 +1,96 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -2 gold, +1 intelligence, 
+Event Outcome: You buy an ale and start making conversation with the other tavern customers. You hear about their stories and learn a couple of life lessons. 
+(Currency -2, Intelligence +1)
+
+
+Event: 2
+Event Name: donate to local faith preacher (5 coins)
+Stat changes from event: -5 gold, +3 charisma, +0.4 karma, 
+Event Outcome: You participate in a sermon and personally donate 5 coins to the faith preacher. He responds very gratuitously and is happy that you participated in the sermon. He goes on to speak very highly of your character to the other people there. 
+(Currency -5, Charisma +3)
+
+
+Event: 3
+Event Name: sabotage guard armory
+Stat changes from event: +0.4 patrol, -0.4 karma, -20 gold, -10 health/HP, -1 strength, 
+Event Outcome: Just as you break in, the guards surround you and you are sent to jail with a hefty fine. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. 
+(Health -10, Currency -20, Strength -1)
+
+
+Event: 4
+Event Name: rob the bank
+Stat changes from event: +40 gold, +0.8000001 patrol, -0.2 karma, 
+Event Outcome: You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault with all the coin you can carry. You were undetected, but the city increases its patrols significantly because of the robbery. 
+(Currency +40)
+
+
+Event: 5
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Currency +100)
+
+
+Event: 6
+Event Name: attend illegal gambling (10 coins)
+Stat changes from event: -10 gold, 
+Event Outcome: You play for a few games for the 10 coin buy-in, but luck is not on your side as you lose it all. 
+(Currency -10)
+
+
+Event: 7
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: 
+Event Outcome: The bank is closed due to recent disturbances in the city. Multiple guards are patrolling inside.
+
+
+Event: 8
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -8 gold, -4 intelligence, -25 health/HP, +0.2 karma, 
+Event Outcome: You give the beggar a coin. He seems appreciative, however when you aren't looking he pickpockets you for more of your coin. You notice him and he takes off running. You attempt to chase him, but end up falling and hitting your head on the pavement. You suffer serious brain damage. 
+(Currency -8, Intelligence -10, Health -25)
+
+
+Event: 9
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, +4 strength, 
+Event Outcome: When you enter, the alchemist informs you that the potions can be quite dangerous if you have a weak body, and instead suggests buying a strength potion. Although you don't think your body is that weak, you agree and buy the strength potion for 10 coins instead. He mixes the potion and you drink it, and although you don't feel different at first, you start feeling very strong after some time. 
+(Currency -10, Strength +4)
+
+
+Event: 10
+Event Name: mine for ore
+Stat changes from event: -40 health/HP, -2 charisma, 
+Event Outcome: You grab a pickaxe and start mining. After a while the ground starts shaking with tremors and all of a sudden a sinkhole appears underneath you. You fall down and experience multiple blunt impacts on your body and you break your jaw. After getting helped out, the hole is filled and you are left with a dislocated jaw, a speech impediment, and serious injuries on your body. 
+(Health -40, Charisma -2)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 112    Range: 0(poor)-50+(rich)
+Strength: 6    Range: 0(weak)-10(very strong)
+Charisma: 4    Range: 0(disgusting)-10(lovely)
+Intelligence: 0    Range: 0(stupid)-10(genius)
+Patrol: 1    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+
+Generated Ending:

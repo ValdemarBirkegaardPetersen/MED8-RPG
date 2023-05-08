@@ -1,0 +1,90 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: +2 gold, 
+Event Outcome: With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight profit. 
+(Currency -5, Currency +7)
+
+
+Event: 2
+Event Name: attend illegal gambling (10 coins)
+Stat changes from event: -10 gold, -20 health/HP, 
+Event Outcome: As you sit at a gambling table, a couple of thugs on the other side start sizing you up. You get into some arguments with them and you end up in a brawl. You manage to get a swing or two in but you take a beating and all of you are thrown out. You end up in the street bruised and bleeding. 
+(Currency -10, Health -20)
+
+
+Event: 3
+Event Name: perform burglary at noble house
+Stat changes from event: +20 gold, -0.2 karma, 
+Event Outcome: You extensively plan a theft heist and sneak into the nobles house undetected. You grab what you easily can carry and avoid the guards patrol routes flawlessly. You manage to slip out silently with coin and jewelry, which you sell on the black market for profit. They never knew what hit them. 
+(Currency +20)
+
+
+Event: 4
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -15 gold, -1 intelligence, 
+Event Outcome: You go and order an ale which you quickly finish. You can't stop yourself from getting another. One ale turns into two, which turns into three and before you know it. You wake up having sparse memory of the night prior. You spent more coin than you initially planned and now have a massive headache making it hard to think. 
+(Currency -15, Intelligence -1)
+
+
+Event: 5
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading. 
+(Currency -3, Currency +9, Charisma -1)
+
+
+Event: 6
+Event Name: help farmer collect his harvest
+Stat changes from event: -35 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, it does take a heavy toll on your health. 
+(Health -35)
+
+
+Event: 7
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, -15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it, but it didn't seem very fresh. You experience som slight food poisoning. 
+(Health -15, Currency -3)
+
+
+Event: 8
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, -25 health/HP, 
+Event Outcome: After approaching the alchemist for a healing mixture, he starts mixing together ingredients. He starts to worry as the cauldron unexpectedly starts bubbling more and more. The cauldron then shoots up a gross tar-like substance. He apologizes and gives you a refund as he closes the shop. You suffer burn damage to your skin. 
+(Currency -10, Health -25)
+
+
+Event: 9
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think. 
+(Health -20, Intelligence -2)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 0    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 2    Range: 0(disgusting)-10(lovely)
+Intelligence: 0    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: -0.2    Range: -1(evil)-1(good)
+
+
+Generated Ending:

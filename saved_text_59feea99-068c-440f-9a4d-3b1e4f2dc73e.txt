@@ -1,0 +1,134 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new. 
+(Intelligence +1)
+
+
+Event: 2
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +7 strength, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Strength +10)
+
+
+Event: 3
+Event Name: hunt for game in the forest
+Stat changes from event: -45 health/HP, -2 strength, 
+Event Outcome: You go out to the forest with your hunting equipment. While on the hunt you are approached by an aggressive black bear. You attempt to make an escape but it chases you down and mauls you. You suffer a lot of physical damage as the bear leaves and a group of hunters find you and carry you back to town. You have multiple flesh wounds and broken bones. 
+(Health -45, Strength -2)
+
+
+Event: 4
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, +25 health/HP, 
+Event Outcome: You pay the alchemist 10 coins, and he starts brewing a potion from the ingredients in his laboratory. After a while, he hands you a potion and tells you to drink it now, before it goes bad. You do and feel very restored. 
+(Currency -10, Health +25)
+
+
+Event: 5
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +6 intelligence, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Intelligence +10)
+
+
+Event: 6
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, +20 gold, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You make some significant strides in your field and the institute sponsor you some coin to further your research. 
+(Intelligence +1, Currency +20)
+
+
+Event: 7
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, -3 charisma, +80 health/HP, 
+Event Outcome: The alchemist looks at you and can tell you look very unhealthy. He instead makes a experimental potion for the same price. This potion, while restores health significantly more than other potions, also takes its toll with huge disgusting green skin boils. 
+(Currency -10, Health +80, Charisma -3)
+
+
+Event: 8
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however. 
+(Strength +1)
+
+
+Event: 9
+Event Name: help farmer collect his harvest
+Stat changes from event: +3 gold, +1 strength, 
+Event Outcome: You help the farmer collect vegetables from the farm. Carrying around heavy pumpkins all day, you end up making a few coins. You also feel slightly stronger from the workout. 
+(Currency +3, Strength +1)
+
+
+Event: 10
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -12 gold, +1 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice some of your clothes and coin have been stolen. Unlucky. 
+(Currency -5, Charisma +1, Currency -7)
+
+
+Event: 11
+Event Name: participate in acedemic research
+Stat changes from event: -35 health/HP, -1 intelligence, -15 gold, 
+Event Outcome: You read through a bunch of books and, while under some strict deadlines, you rush some risky experiments too quickly resulting in a spontaneous combustion. You suffer burns and cranial damage from the explosion, and have to pay compensation to the institute. 
+(Health -35, Currency -15, Intelligence -1)
+
+
+Event: 12
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the ground. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss. 
+(Health -30, Currency +100)
+
+
+Event: 13
+Event Name: rob the bank
+Stat changes from event: -30 health/HP, +0.8 patrol, -2 strength, -0.2 karma, 
+Event Outcome: You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault. After reaching the vault, you find it completely empty and are ambushed by the bank guards. Someone tipped them off. Your crew frantically attempts to escape, and although you manage to escape the way you came in you break your arm and are seriously wounded from multiple sword slash wounds. 
+(Health -30, Strength -2)
+
+
+Event: 14
+Event Name: sabotage guard armory
+Stat changes from event: +0.4 patrol, -0.4 karma, -20 gold, -10 health/HP, -1 strength, 
+Event Outcome: Just as you break in, the guards surround you and you are sent to jail with a hefty fine. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. 
+(Health -10, Currency -20, Strength -1)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 80    Range: 0(poor)-50+(rich)
+Strength: 7    Range: 0(weak)-10(very strong)
+Charisma: 1    Range: 0(disgusting)-10(lovely)
+Intelligence: 9    Range: 0(stupid)-10(genius)
+Patrol: 1.2    Range: 0(no guards)-1(patrols everywhere)
+Karma: -0.6    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After months of wandering Kingstone, the lone wanderer grew restless. He had attempted to make a name for himself in the city but all of his endeavors had led him to nothing but trouble. His pursuits of power and wealth had only left him with scars and empty pockets. 
+
+Despite his failures, the wanderer continued to seek ways to improve himself. He spent long hours in the library, researching and studying, and even participated in academic research. His intellect grew with these experiences, allowing him to make significant strides in his field. 
+
+Alas, the wanderer's pursuit of power led him down a dark path. His desperation for strength led him to perform unsanctioned dark rituals. These rituals had long-lasting consequences on his health, leaving him with blood loss and scars. He also attempted to rob a bank and sabotage a guard armory, leading to his eventual demise. 
+
+Although his deeds in the city were often questionable, the citizens of Kingstone would remember him as a figure of complexity and intrigue. They would remember his intellect and his tireless pursuit of self-improvement. However, his violent tendencies would leave some citizens with disdain and distrust.
+
+As the wanderer's story came to a close, the once-lone wanderer was mourned by few. However, his story would not be forgotten, remaining a complex and controversial figure in the annals of Kingstone's history.
