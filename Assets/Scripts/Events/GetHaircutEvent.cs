@@ -14,7 +14,7 @@ public class GetHaircutEvent : MonoBehaviour
 
         if (eg.getCurrency() < 2)
         {
-            return "We appreciate your business, but please come back when you can afford it";
+            return "We appreciate your business, but please come back when you can afford it. \n(Not enough Currency)";
             // exit event here
         }
 
@@ -30,30 +30,29 @@ public class GetHaircutEvent : MonoBehaviour
         {
             eg.setCurrency(eg.getCurrency() - 2);
             eg.setCharisma(eg.getCharisma() - 1);
-            eg.setIntelligence(eg.getIntelligence() - 1);
             eg.setHealth(eg.getHealth() - 25);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut";
+            return "You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut. \n(Currency -2, Charisma -1, Health -25)";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 2);
             eg.setCharisma(eg.getCharisma() + 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now";
+            return "You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now. \n(Currency -2, Charisma +1)";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() - 2);
             eg.setCharisma(eg.getCharisma() - 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "It is a busy day at the barber, and unfortunately you get stuck getting a haircut by the inexperienced new guy. You end up getting a terribly ugly bowl cut. What a waste of money";
+            return "It is a busy day at the barber, and unfortunately you get stuck getting a haircut by the inexperienced new guy. You end up getting a terribly ugly bowl cut. What a waste of money. \n(Currency -2, Charisma -1)";
         }
         else if (finalOutcome == 3)
         {
             eg.setCharisma(eg.getCharisma() + 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "The barber seems delighted to see you and seems in a good mood. \"Take a seat, this one is on the house\" he says";
+            return "The barber seems delighted to see you and seems in a good mood. \"Take a seat, this one is on the house\" he says. \n(Charisma +1)";
         }
 
         Debug.Log("Error in outcome calculcation");

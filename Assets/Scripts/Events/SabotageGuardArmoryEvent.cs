@@ -14,7 +14,7 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
 
         if (eg.getPatrol() < 0.2f)
         {
-            return "The guard armory is locked and not in use. You see no way or reason to sabotage the armory for now";
+            return "The guard armory is locked and not in use. You see no way or reason to sabotage the armory for now.";
         }
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
@@ -30,9 +30,10 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.4f);
             eg.setKarma(eg.getKarma() - 0.4f);
             eg.setCurrency(eg.getCurrency() - 20);
+            eg.setHealth(eg.getHealth() - 10);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            eg.setStrength(eg.getStrength() - 3);
-            return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. When they let you out you are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.";
+            eg.setStrength(eg.getStrength() - 1);
+            return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. \n(Health -10, Currency -20, Strength -1)";
         }
         else if (finalOutcome == 1)
         {
@@ -54,9 +55,10 @@ public class SabotageGuardArmoryEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.4f);
             eg.setKarma(eg.getKarma() - 0.4f);
             eg.setCurrency(eg.getCurrency() - 20);
-            eg.setStrength(eg.getStrength() - 3);
+            eg.setHealth(eg.getHealth() - 10);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. When they let you out you are very malnourished by the poor and rotten jail food and guard patrols are increased in the city.";
+            eg.setStrength(eg.getStrength() - 1);
+            return "Just as you break in, the guards surround you and you are sent to jail with a hefty fine. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. \n(Health -10, Currency -20, Strength -1)";
         }
 
         Debug.Log("Error in outcome calculcation");

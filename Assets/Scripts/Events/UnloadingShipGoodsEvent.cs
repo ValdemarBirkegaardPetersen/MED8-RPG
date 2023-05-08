@@ -19,7 +19,7 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
 
         if (eg.getStrength() < 3)
         {
-            return "You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work";
+            return "You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work. \n(Strength too low)";
         }
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
@@ -32,31 +32,31 @@ public class UnloadingShipGoodsEvent : MonoBehaviour
 
         if (finalOutcome == 0)
         {
-            eg.setHealth(eg.getHealth() - 60);
-            eg.setStrength(eg.getStrength() - 6);
+            eg.setHealth(eg.getHealth() - 35);
+            eg.setStrength(eg.getStrength() - 4);
             eg.setEntropy(eg.getEntropy() + 0.05f);
 
-            return "You start working for a low wage, carrying boxes from the ship onto the dock storage area. Out of nowhere a lift crane swings out and knocks you down. Crates fall on top of you and you suffer broken bones as the other workers pull you out";
+            return "You start working for a low wage, carrying boxes from the ship onto the dock storage area. Out of nowhere a lift crane swings out and knocks you down. Crates fall on top of you and you suffer broken bones as the other workers pull you out. \n(Health -35, Strength -4)";
         }
         else if (finalOutcome == 1)
         {
             eg.setStrength(eg.getStrength() + 1);
             eg.setCurrency(eg.getCurrency() + 5);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger";
+            return "You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger. \n(Currency +5, Strength +1)";
         }
         else if (finalOutcome == 2)
         {
             eg.setStrength(eg.getStrength() + 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You spend all day carrying crates from the ship into the dock storage area, however you drop and ruin some of the cargo along the way. They are reimbursed from your wage, so you earn no coin for your work. You do feel stronger though";
+            return "You spend all day carrying crates from the ship into the dock storage area, however you drop and ruin some of the cargo along the way. They are reimbursed from your wage, so you earn no coin for your work. You do feel stronger though. \n(Strength +1)";
         }
         else if (finalOutcome == 3)
         {
             eg.setStrength(eg.getStrength() + 1);
             eg.setCurrency(eg.getCurrency() + 10);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You spend all day carrying crates from the ship into the dock storage area. You work twice as well as any other dock worker and you are rewarded for your efficiency. You gain a nice coin bonus as well as feeling stronger from all the hard work";
+            return "You spend all day carrying crates from the ship into the dock storage area. You work twice as well as any other dock worker and you are rewarded for your efficiency. You gain a nice coin bonus as well as feeling stronger from all the hard work. \n(Currency +10, Strength +1)";
         }
 
         Debug.Log("Error in outcome calculcation");

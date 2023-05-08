@@ -1,0 +1,188 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 2
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 3
+Event Name: help farmer collect his harvest
+Stat changes from event: +13 gold, 
+Event Outcome: You start working and notice the farm could use some improvements. Not only do you collect various vegetables for the farmer, but you also give him some tips about agriculture for better harvest in the future. He thanks you and gives you a bonus for the tip
+
+
+Event: 4
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 5
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 6
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 7
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 8
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.
+
+
+Event: 9
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 10
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +15 health/HP, 
+Event Outcome: The owner seems delighted to see you. They smile at you and gives you a piece of bread free of charge. You eat it and feel restored
+
+
+Event: 11
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 12
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.
+
+
+Event: 13
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 14
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, -15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it, but it didn't seem very fresh. You experience som slight food poisoning
+
+
+Event: 15
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 16
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 17
+Event Name: help farmer collect his harvest
+Stat changes from event: 
+Event Outcome: The farmer looks at you and laughs. 'You don't look like you would be of much help carrying anything', he says apologetically
+
+
+Event: 18
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +2 charisma, -20 health/HP, 
+Event Outcome: While trading at the market you stumble upon some new perfumes, which you believe could earn you some profit. You buy them and sell them to people for a slight profit. At the end of the day, while you do smell nice to other people, you get a deadly allergic reaction, and suffer damage to your respiratory before you can get medical help.
+
+
+Event: 19
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, -15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it, but it didn't seem very fresh. You experience som slight food poisoning
+
+
+Event: 20
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading.
+
+
+Event: 21
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: 
+Event Outcome: Due to unknown circumstances, the bakery has closed down
+
+
+Event: 22
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +2 charisma, -20 health/HP, 
+Event Outcome: While trading at the market you stumble upon some new perfumes, which you believe could earn you some profit. You buy them and sell them to people for a slight profit. At the end of the day, while you do smell nice to other people, you get a deadly allergic reaction, and suffer damage to your respiratory before you can get medical help.
+
+
+Event: 23
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -6 health/HP, 
+Event Outcome: The fortune teller tells you to take a seat and starts waving her hands around a glass orb. She mumbles for a bit, but then all of a sudden the glass orb starts shaking and explodes, throwing glass shards everywhere. With both of you lying on the ground bleeding, she screams at you to leave. You manage to stumble away and remove most of the glass shards. You have experienced serious blood loss
+
+
+Event: 24
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -30 gold, -3 intelligence, 
+Event Outcome: You go and order an ale which you quickly finish. You can't stop yourself from getting another. One ale turns into two, which turns into three and before you know it. You wake up having sparse memory of the night prior. You spent a total of 30 coins and now have a massive headache making it hard to think.
+
+
+Event: 25
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: 
+Event Outcome: Looking around, a bunch of traders are selling and buying merchandise. You feel like you could make a profit doing some trading but you need at least 3 coins to get the ball rolling
+
+
+Event: 26
+Event Name: attend noble garden party
+Stat changes from event: -20 health/HP, 
+Event Outcome: While wining and dining with the other guests, all of a sudden a fire is started and chaos spreads among the guests. As it turns out some rebelling arsonists are setting the party ablaze as a political movement. As you escape you manage to catch a few burns.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 0    Range: 0(poor)-50+(rich)
+Strength: 0    Range: 0(weak)-10(very strong)
+Charisma: 6    Range: 0(disgusting)-10(lovely)
+Intelligence: 0    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After months of wandering around Kingstone, trying to make a name for himself, the lone wanderer's story came to a tragic end at the noble garden party. As he attempted to escape the blazing inferno, the arsonists caught up to him, and he suffered fatal burns, passing away soon after. 
+
+Despite his short-lived time in the city, the lone wanderer left an impact on those he interacted with. Farmers spoke of his willingness to work hard and share his knowledge of agriculture. The Baker remembered his loyal patronage, even during hard times, while also noting his occasional bouts of bad luck with stale bread. His charisma was undeniable, with traders recognizing his ability to haggle for profitable outcomes. However, his intelligence was lacking, as seen during his lack of foresight at the market when buying perfumes that caused a deadly allergic reaction. 
+
+Ultimately, the lone wanderer's tale will be one of perseverance despite the challenges one may face in life. His resilience in the face of bad crops and food poisoning, and his unwavering optimism despite his dwindling health, will be remembered fondly by those who knew him. May his story be a lesson to future generations to never give up and to always strive for a better life, regardless of the odds.

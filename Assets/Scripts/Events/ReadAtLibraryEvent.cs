@@ -12,14 +12,14 @@ public class ReadAtLibraryEvent : MonoBehaviour
     {
         eg = new EventUtility();
 
-        if (eg.getIntelligence() < 2)
+        if (eg.getIntelligence() < 1)
         {
-            return "You grab a book and attempt to read it, but you just cannot make sense of any of the letters";
+            return "You grab a book and attempt to read it, but you just cannot make sense of any of the letters. \n(Intelligence too low)";
             // exit event here
         }
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
-        var outcome1 = 10;
+        var outcome1 = 16;
         var outcome2 = 4;
         var outcome3 = 4;
     
@@ -28,17 +28,15 @@ public class ReadAtLibraryEvent : MonoBehaviour
 
         if (finalOutcome == 0)
         {
-            eg.setStrength(eg.getStrength() - 3);
-            eg.setIntelligence(eg.getIntelligence() - 3);
-            eg.setHealth(eg.getHealth() - 5);
+            eg.setHealth(eg.getHealth() - 25);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.";
+            return "You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The cursed book has drained you of your lifeforce, as the library helps you recover. \n(Health -25)";
         }
         else if (finalOutcome == 1)
         {
             eg.setIntelligence(eg.getIntelligence() + 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You grab a book and start reading for hours on end. You end up leaving feeling you learned something new.";
+            return "You grab a book and start reading for hours on end. You end up leaving feeling you learned something new. \n(Intelligence +1)";
         }
         else if (finalOutcome == 2)
         {
@@ -46,15 +44,14 @@ public class ReadAtLibraryEvent : MonoBehaviour
             eg.setStrength(eg.getStrength() - 1);
             eg.setHealth(eg.getHealth() - 10);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge.";
+            return "You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge. You attempt to recover from your sprain injury as best as you can. \n(Health -10, Strength -1, Intelligence +3)";
         }
         else if (finalOutcome == 3)
         {
             eg.setCurrency(eg.getCurrency() - 5);
-            eg.setCharisma(eg.getCharisma() - 1);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setIntelligence(eg.getIntelligence() + 1);
-            return "You grab a book and start reading for hours on end learning something new. Just as you are about to leave you accidentally spill water on the book. The library workers are upset and you end up paying some coins in restitution.";
+            return "You grab a book and start reading for hours on end learning something new. Just as you are about to leave you accidentally spill water on the book. The library workers are upset and you end up paying some coins in restitution. \n(Intelligence +1, Currency -5)";
         }
 
         Debug.Log("Error in outcome calculcation");

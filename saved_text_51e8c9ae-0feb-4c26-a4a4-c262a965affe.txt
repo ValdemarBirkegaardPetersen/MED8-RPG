@@ -1,0 +1,96 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: +10 gold, +1 intelligence, 
+Event Outcome: You get an ale and someone invites you to play a game of chess. You play for fun to begin with, but you start getting competitive and play for money. With an increasing audience watching you play you manage to win multiple times making a bit of profit.
+
+
+Event: 2
+Event Name: make investment at local bank (5 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: With help from the bankers you happily invest 5 coins in various short term funds. After some time, the bankers pull out your investment for a slight loss
+
+
+Event: 3
+Event Name: rob the bank
+Stat changes from event: -20 gold, -2 strength, -10 health/HP, +0.8 patrol, -0.2 karma, 
+Event Outcome: You plan the robbery heist with a crew, but they betray you and lock you in the vault as they escape. You are later caught by the guards. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food
+
+
+Event: 4
+Event Name: hunt for game in the forest
+Stat changes from event: 
+Event Outcome: You have the supplies to go hunt for game, however you are too weak to be able to carry any game back to the city to sell it so you decide to call it off
+
+
+Event: 5
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: 
+Event Outcome: You want to perform the unsanctioned ritual, but you lack the required knowledge
+
+
+Event: 6
+Event Name: read at library
+Stat changes from event: +3 intelligence, -1 strength, -10 health/HP, 
+Event Outcome: You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge.
+
+
+Event: 7
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +10 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 8
+Event Name: hunt for game in the forest
+Stat changes from event: +10 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being strong enough, you manage to carry the entire deer back to the city, which you sell to the butcher for a good amount of coin
+
+
+Event: 9
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, -0 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 10
+Event Name: hunt for game in the forest
+Stat changes from event: +10 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being strong enough, you manage to carry the entire deer back to the city, which you sell to the butcher for a good amount of coin
+
+
+Event: 11
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -20 health/HP, -0.8 karma, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. All of a sudden your surroundings start to shake, and while your instinct tells you to stop, you succumb to the lust for power. Dark shrouded shadows enter your body and start eating you from within. After the ritual you are nothing but a pile of dust.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 20
+Strength: 10
+Charisma: 3
+Intelligence: 7
+Patrol: 0.8
+Karma: -1
+
+
+Generated Ending:
+After wandering into Kingstone, the lone wanderer found himself at the mercy of the fickle winds of fortune. He drank ale, played chess, and made an investment at the bank but luck wasn't on his side. He even tried his hand at robbing the bank but failed miserably. However, fate was not done with him yet. He discovered an ancient tome, which while difficult to carry, taught him a great deal. He performed unsanctioned dark rituals, some that failed and some that worked, and he even succeeded in hunting a deer to sell. 
+
+Alas, in the end, he gave in to his lust for power and tried yet another ritual. It was his last. His surroundings shook, and he felt as if shadows were eating him. When it was all over, he was nothing but a pile of dust. However, people will tell the tale of the lone wanderer who dared to seek unsanctioned power, the one who found knowledge and strength, but in the end, succumbed to his own greed. They will remember him as a warning, but also as a tale of one who dared to dream bigger than the limitations set upon him. He will be remembered.

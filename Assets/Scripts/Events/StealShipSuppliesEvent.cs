@@ -33,17 +33,17 @@ public class StealShipSuppliesEvent : MonoBehaviour
             eg.setHealth(eg.getHealth() - 40);
             eg.setEntropy(eg.getEntropy() + 0.05f);
 
-            return "You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help.";
+            return "You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help. \n(Health -20, Currency -20)";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 10);
-            eg.setStrength(eg.getStrength() - 2);
+            eg.setStrength(eg.getStrength() - 1);
             eg.setHealth(eg.getHealth() - 10);
             eg.setPatrol(eg.getPatrol() + 0.4f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You attempt to steal some supplies, but you are caught. After serving some time in jail you pay a fine and are let out. You are very malnourished by the poor and rotten jail food. Patrols in the city are increased.";
+            return "You attempt to steal some supplies, but you are caught. You pay a fine and serve some time in jail. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. \n(Health -10, Currency -10, Strength -1)";
         }
         else if (finalOutcome == 2)
         {
@@ -51,14 +51,14 @@ public class StealShipSuppliesEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.4f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You attempt to steal some supplies, and although you are detected you manage to escape with some goods which you sell for a profit on the black market. Patrols in the city are increased.";
+            return "You attempt to steal some supplies, and although you are detected you manage to escape with some goods which you sell for a profit on the black market. Patrols in the city are increased. \n(Currency +15)";
         }
         else if (finalOutcome == 3)
         {
             eg.setCurrency(eg.getCurrency() + 15);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You thoroughly form a plan to steal the supplies at night. Although there are guards you manage, with quick wit, to evade them and remain undetected while escaping with some goods, which you sell for a profit on the black market.";
+            return "You thoroughly form a plan to steal the supplies at night. Although there are guards you manage, with quick wit, to evade them and remain undetected while escaping with some goods, which you sell for a profit on the black market. \n(Currency +15)";
         }
 
         Debug.Log("Error in outcome calculcation");

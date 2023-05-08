@@ -14,7 +14,7 @@ public class GiveBeggarDonationEvent : MonoBehaviour
 
         if (eg.getCurrency() < 1)
         {
-            return "Oh, you don't have any coin to spare? perhaps you should be the one begging ha ha ha!";
+            return "\"Oh, you don't have any coin to spare? perhaps you should be the one begging ha ha ha!\" \n(Not enough Currency)";
             // exit event here
         }
 
@@ -31,16 +31,17 @@ public class GiveBeggarDonationEvent : MonoBehaviour
         {
             eg.setCurrency(eg.getCurrency() - 8);
             eg.setIntelligence(0);
+            eg.setHealth(eg.getHealth() - 25);
             eg.setKarma(eg.getKarma() + 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You give the beggar a coin. He seems appreciative, however when you aren't looking he pickpockets you for more of your coin. You notice him and he takes off running. You attempt to chase him, but end up falling and hitting your head on the pavement. You suffer serious brain damage";
+            return "You give the beggar a coin. He seems appreciative, however when you aren't looking he pickpockets you for more of your coin. You notice him and he takes off running. You attempt to chase him, but end up falling and hitting your head on the pavement. You suffer serious brain damage. \n(Currency -8, Intelligence -10, Health -25)";
         }
         else if (finalOutcome == 1)
         {
             eg.setCurrency(eg.getCurrency() - 1);
             eg.setKarma(eg.getKarma() + 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You give the beggar a coin. He thanks you and wishes you good fortune going forward";
+            return "You give the beggar a coin. He thanks you and wishes you good fortune going forward. \n(Currency -1)";
         }
         else if (finalOutcome == 2)
         {
@@ -48,14 +49,14 @@ public class GiveBeggarDonationEvent : MonoBehaviour
             eg.setKarma(eg.getKarma() + 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setIntelligence(eg.getIntelligence() + 2);
-            return "You give the beggar a coin. He seems very appreciative and in return he teaches you a couple of life lessons he learned throughout his life";
+            return "You give the beggar a coin. He seems very appreciative and in return he teaches you a couple of life lessons he learned throughout his life. \n(Currency -1, Intelligence +2)";
         }
         else if (finalOutcome == 3)
         {
-            eg.setCurrency(0);
+            eg.setCurrency(eg.getCurrency() - 50);
             eg.setKarma(eg.getKarma() + 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You pull out your coin pouch and reach in, but all of a sudden you are surrounded by a flock of thugs. They demand all your coin, and afraid of what they are going to do, you comply and give them the coin.";
+            return "You pull out your coin pouch and reach in, but all of a sudden you are surrounded by a flock of thugs. They demand all your coin, and afraid of what they are going to do, you comply and give them all the coin you have on you. \n(Currency -50)";
         }
 
         Debug.Log("Error in outcome calculcation");

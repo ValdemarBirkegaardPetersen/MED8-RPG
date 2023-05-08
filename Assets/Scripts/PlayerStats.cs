@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public int strength;
     public int health;
 
-    private bool waitForDeathScene;
+    public bool waitForDeathScene;
     
     public float entropy;
     public float patrol;
@@ -39,13 +39,13 @@ public class PlayerStats : MonoBehaviour
         waitForDeathScene = false;
 
         GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "The players stats at the beginning of the game: \n";
-        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
-                                                                                                "Currency: " + currency + "\n" +
-                                                                                                "Strength: " + strength + "\n" +
-                                                                                                "Charisma: " + charisma + "\n" +
-                                                                                                "Intelligence: " + intelligence + "\n" +
-                                                                                                "Patrol: " + patrol + "\n" +
-                                                                                                "Karma: " + karma + "\n";
+        GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "    Range: 0(dead)-100(healthy))\n" +
+                                                                                                "Currency: " + currency + "    Range: 0(poor)-50+(rich)\n" +
+                                                                                                "Strength: " + strength + "    Range: 0(weak)-10(very strong)\n" +
+                                                                                                "Charisma: " + charisma + "    Range: 0(disgusting)-10(lovely)\n" +
+                                                                                                "Intelligence: " + intelligence + "    Range: 0(stupid)-10(genius)\n" +
+                                                                                                "Patrol: " + patrol + "    Range: 0(no guards)-1(patrols everywhere)\n" +
+                                                                                                "Karma: " + karma + "    Range: -1(evil)-1(good)\n";
 
     }
 
@@ -72,13 +72,13 @@ public class PlayerStats : MonoBehaviour
             if (waitForDeathScene == false)
             {
                 GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Player died at the last event. \n\nThe players stats at the end of the game: \n";
-                GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "\n" +
-                                                                                                        "Currency: " + currency + "\n" +
-                                                                                                        "Strength: " + strength + "\n" +
-                                                                                                        "Charisma: " + charisma + "\n" +
-                                                                                                        "Intelligence: " + intelligence + "\n" +
-                                                                                                        "Patrol: " + patrol + "\n" +
-                                                                                                        "Karma: " + karma + "\n";
+                GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput += "Health: " + health + "    Range: 0(dead)-100(healthy))\n" +
+                                                                                                        "Currency: " + currency + "    Range: 0(poor)-50+(rich)\n" +
+                                                                                                        "Strength: " + strength + "    Range: 0(weak)-10(very strong)\n" +
+                                                                                                        "Charisma: " + charisma + "    Range: 0(disgusting)-10(lovely)\n" +
+                                                                                                        "Intelligence: " + intelligence + "    Range: 0(stupid)-10(genius)\n" +
+                                                                                                        "Patrol: " + patrol + "    Range: 0(no guards)-1(patrols everywhere)\n" +
+                                                                                                        "Karma: " + karma + "    Range: -1(evil)-1(good)\n";
 
                 // save chat gpt prompt for next scene
                 DataManager.Instance.stringToPass = GameObject.FindGameObjectWithTag("x").GetComponent<PlayerController>().chatgptInput;
@@ -90,12 +90,12 @@ public class PlayerStats : MonoBehaviour
             {
                 waitForDeathScene = true;
             }
-
+/*
             if (Input.GetKeyDown(KeyCode.Z) && waitForDeathScene)
             {
                 SceneManager.LoadScene("DeathScene");
             }
-
+*/
 
 
         }

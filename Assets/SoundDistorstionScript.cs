@@ -16,6 +16,6 @@ public class SoundDistorstionScript : MonoBehaviour
     void Update()
     {
         audioSource.pitch = 1.125f-(playerStats.entropy/4);
-        Debug.Log("entropy: "+playerStats.entropy + " pitch: "+audioSource.pitch);
+        //Debug.Log("entropy: "+playerStats.entropy + " pitch: "+audioSource.pitch);
     }
 }

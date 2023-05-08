@@ -1,0 +1,124 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: visit fortune teller (3 coins)
+Stat changes from event: -3 gold, 
+Event Outcome: You pay the fortune teller 3 coins and she tells you that your fate is out of your hands, but you can still influence how you are remembered. She tells you that your past actions have consequences, and that your future is shrouded by mystery and adventure
+
+
+Event: 2
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 3
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 4
+Event Name: mine for ore
+Stat changes from event: 
+Event Outcome: You attempt to lift a pickaxe but it is much too heavy for you
+
+
+Event: 5
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: -2 gold, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market, but you end up making some bad deals and losing a bit of coin.
+
+
+Event: 6
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -10 gold, +1 intelligence, 
+Event Outcome: You get an ale and someone invites you to play a game of chess. You play for fun to begin with, but you start getting competitive and play for money. With an increasing audience watching you play you manage to lose multiple times losing a bit of money.
+
+
+Event: 7
+Event Name: participate in acedemic research
+Stat changes from event: -2 charisma, -2 intelligence, -30 gold, 
+Event Outcome: You read through a bunch of books and, while under some strict deadlines, you rush some risky experiments too quickly resulting in a spontaneous combustion. You suffer burns and cranial damage from the explosion, and have to pay compensation to the institute
+
+
+Event: 8
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new.
+
+
+Event: 9
+Event Name: perform burglary at noble house
+Stat changes from event: -40 health/HP, 
+Event Outcome: You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering.
+
+
+Event: 10
+Event Name: sabotage guard armory
+Stat changes from event: 
+Event Outcome: The guard armory is locked and not in use. You see no way or reason to sabotage the armory for now
+
+
+Event: 11
+Event Name: rob the bank
+Stat changes from event: +15 gold, +0.6 patrol, -0.2 karma, 
+Event Outcome: You plan the robbery heist with a crew, but after successfully infiltrating the vault you are unable to carry as many coins as you thought. You manage to escape stealthily but the profits could have been better.
+
+
+Event: 12
+Event Name: catch fish at the docks
+Stat changes from event: +5 gold, -1 charisma, 
+Event Outcome: You spend hours fishing. Although you return smelling like fish and sewage, you manage to sell the catch for 5 gold profit
+
+
+Event: 13
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+
+Event: 14
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -20 gold, +0.2 karma, 
+Event Outcome: You pull out your coin pouch and reach in, but all of a sudden you are surrounded by a flock of thugs. They demand all your coin, and afraid of what they are going to do, you comply and give them the coin.
+
+
+Event: 15
+Event Name: meditate at holy shrine
+Stat changes from event: +0.5 karma, 
+Event Outcome: You spend hours resting and meditating at the shrine with peaceful thoughts. You feel more good-minded and positive after a while
+
+
+Event: 16
+Event Name: catch fish at the docks
+Stat changes from event: -40 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 0
+Charisma: 0
+Intelligence: 0
+Patrol: 0.6
+Karma: 0.5
+
+
+Generated Ending:
+After many days of wandering around, the wanderer finally found himself on the brink of death, while meditating at the holy shrine. The events that led to this point are unknown to the people of Kingstone, but all that is remembered when his name is spoken is his final act of kindness - donating his remaining coins to the poor and needy before he passed away. His fate may have been out of his hands, but he used his influence to make one last positive impact on the world before he left it. The people of Kingstone may never know the true story of the wanderer's life, but they will always remember him as a kind soul who left behind a legacy of giving.

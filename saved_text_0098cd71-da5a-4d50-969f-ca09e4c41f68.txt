@@ -1,0 +1,124 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however
+
+
+Event: 2
+Event Name: help farmer collect his harvest
+Stat changes from event: -3 strength, -30 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, you do become extremely malnourished
+
+
+Event: 3
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.
+
+
+Event: 4
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +2 charisma, -20 health/HP, 
+Event Outcome: While trading at the market you stumble upon some new perfumes, which you believe could earn you some profit. You buy them and sell them to people for a slight profit. At the end of the day, while you do smell nice to other people, you get a deadly allergic reaction, and suffer damage to your respiratory before you can get medical help.
+
+
+Event: 5
+Event Name: participate in acedemic research
+Stat changes from event: -2 charisma, -2 intelligence, -30 gold, 
+Event Outcome: You read through a bunch of books and, while under some strict deadlines, you rush some risky experiments too quickly resulting in a spontaneous combustion. You suffer burns and cranial damage from the explosion, and have to pay compensation to the institute
+
+
+Event: 6
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: 
+Event Outcome: Oh, you don't have any coin to spare? perhaps you should be the one begging ha ha ha!
+
+
+Event: 7
+Event Name: read at library
+Stat changes from event: 
+Event Outcome: You grab a book and attempt to read it, but you just cannot make sense of any of the letters
+
+
+Event: 8
+Event Name: catch fish at the docks
+Stat changes from event: -40 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can
+
+
+Event: 9
+Event Name: unload ship goods at the dock
+Stat changes from event: 
+Event Outcome: You approach the ship supply crew to offer to help unload the ships good for a couple of coin, but they refuse your help because you look too weak to work
+
+
+Event: 10
+Event Name: steal ship supplies
+Stat changes from event: +15 gold, +0.4 patrol, -0.2 karma, 
+Event Outcome: You attempt to steal some supplies, and although you are detected you manage to escape with some goods which you sell for a profit on the black market. Patrols in the city are increased.
+
+
+Event: 11
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -5 gold, 
+Event Outcome: After having paid the entrance fee, you see some of the patrons whispering behind your back to each other and the staff. You are then approached by the staff and told to leave. You ask why, but they refuse to answer your question and throw you out without a refund
+
+
+Event: 12
+Event Name: get a new haircut (2 coins)
+Stat changes from event: +1 charisma, 
+Event Outcome: The barber seems delighted to see you and seems in a good mood. "Take a seat, this one is on the house" he says
+
+
+Event: 13
+Event Name: meditate at holy shrine
+Stat changes from event: -0.5 karma, 
+Event Outcome: You spend hours meditating at the shrine, however your thoughts are very restless and intense. After the meditation you end up feeling much more anxious, untrusting and deceptive than before
+
+
+Event: 14
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -10 gold, -5 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath. Just as you are about to leave you notice your clothes, shoes and money have been stolen. You find some rags on the street you decide to wear as it is better than nothing
+
+
+Event: 15
+Event Name: perform burglary at noble house
+Stat changes from event: -40 health/HP, 
+Event Outcome: You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 0    Range: 0(poor)-50+(rich)
+Strength: 1    Range: 0(weak)-10(very strong)
+Charisma: 0    Range: 0(disgusting)-10(lovely)
+Intelligence: 1    Range: 0(stupid)-10(genius)
+Patrol: 0.4    Range: 0(no guards)-1(patrols everywhere)
+Karma: -0.7    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+With his passing, the lone wanderer's story fades into obscurity. Although he may not have found the fame and fortune he sought, Kingstone remembers him as a cautionary tale of foolishness and greed.
+
+Some say he met his end because of his reckless actions, stealing from the city's nobles and breaking into homes uninvited. Others speculate that his poor health and low stamina betrayed him when he most needed it, and that his lack of intelligence and charisma made him easy prey for the dangers that lay within.
+
+Whatever the truth may be, the city doesn't mourn his loss. Patrols continue to be vigilant against criminals, and many merchants thank their lucky stars that the wanderer never had the chance to steal from them.
+
+His story may not be one of heroism or greatness, but it serves as a reminder that the choices we make have consequences, and that a life lived for selfish desires will ultimately lead only to ruin.

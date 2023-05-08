@@ -284,10 +284,10 @@ public class PlayerController : MonoBehaviour
         if (eventCollider.bounds.Contains(transform.position))
         {
             returnbool = true;
-            textMeshPro.text = "Press 'Z' to " + eventCollider.name;
+            textMeshPro.text = "Press 'Space' to " + eventCollider.name;
 
             //rct.position = new Vector2(1000, 31.30f);
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("test");
                 var curentPos = transform.position;

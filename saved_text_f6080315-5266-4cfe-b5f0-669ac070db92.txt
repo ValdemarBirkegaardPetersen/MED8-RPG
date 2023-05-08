@@ -1,0 +1,158 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100
+Currency: 10
+Strength: 3
+Charisma: 3
+Intelligence: 3
+Patrol: 0
+Karma: 0
+
+Event: 1
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -10 gold, +1 intelligence, 
+Event Outcome: You get an ale and someone invites you to play a game of chess. You play for fun to begin with, but you start getting competitive and play for money. With an increasing audience watching you play you manage to lose multiple times losing a bit of money.
+
+
+Event: 2
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: 
+Event Outcome: You want to perform the unsanctioned ritual, but you lack the required knowledge
+
+
+Event: 3
+Event Name: read at library
+Stat changes from event: +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end. You end up leaving feeling you learned something new.
+
+
+Event: 4
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +5 intelligence, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that you learned all life's secrets. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 5
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience
+
+
+Event: 6
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+
+Event: 7
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, +20 gold, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You make some significant strides in your field and the institute sponsor you some coin to further your research
+
+
+Event: 8
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: -10 gold, -3 charisma, -3 intelligence, +80 health/HP, 
+Event Outcome: The alchemist looks at you and can tell you look very unhealthy. He instead makes a experimental potion for the same price. This potion, while restores health significantly more than other potions, also takes its toll with decreased mind clarity and unnappealing skin boils
+
+
+Event: 9
+Event Name: participate in acedemic research
+Stat changes from event: 
+Event Outcome: As you are about to enter the institute you are escorted off the grounds. 'Get out of here, we don't want your kind here, you're making us look bad' the staff says
+
+
+Event: 10
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 11
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, +1 charisma, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. You definitely seem more approachable now
+
+
+Event: 12
+Event Name: visit the bathhouse (5 coins)
+Stat changes from event: -5 gold, +2 charisma, 
+Event Outcome: You pay the bathhouse 5 coins and you spend the day having a nice bath, and end up much cleaner and nicer smelling than before
+
+
+Event: 13
+Event Name: participate in acedemic research
+Stat changes from event: +1 intelligence, 
+Event Outcome: You read through a bunch of books, and do a couple of experiments. You don't make any breakthroughs but you learn from your experience
+
+
+Event: 14
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+
+Event: 15
+Event Name: participate in acedemic research
+Stat changes from event: 
+Event Outcome: You look around the university and see scholars of all different types. You do not seem qualified to be able to research at the institute so you leave again. Perhaps you will return when you are more capable
+
+
+Event: 16
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 17
+Event Name: get a new haircut (2 coins)
+Stat changes from event: -2 gold, -1 charisma, -1 intelligence, -25 health/HP, 
+Event Outcome: You pay the barber 2 coins to cut and style your hair. In the middle of the haircut, a group of thugs show up and start extorting the barbershop owner. You speak up, mostly out of confusion and they beat you on the head with a club. You get thrown out without a say, suffering a concussion and terrible unfinished haircut
+
+
+Event: 18
+Event Name: meditate at holy shrine
+Stat changes from event: -20 health/HP, -2 intelligence, 
+Event Outcome: You sit down at the shrine and start to meditate. You have visions that start becoming more and more worrying. Sinisters thoughts and horrifying nightmares enter your mind as you start hyperventilating. You collapse and hit your head on the ground. You wake up with a clouded mind, feeling memory loss and migrains everytime you think
+
+
+Event: 19
+Event Name: give beggar a donation (1 coin)
+Stat changes from event: -1 gold, +0.2 karma, +2 intelligence, 
+Event Outcome: You give the beggar a coin. He seems very appreciative and in return he teaches you a couple of life lessons he learned throughout his life
+
+
+Event: 20
+Event Name: read at library
+Stat changes from event: -3 strength, -3 intelligence, -5 health/HP, 
+Event Outcome: You stumble upon a black humming book, you are blinded by your pursuit of knowledge as you foolishly start reading being absorbed more and more until you pass out. The library helps you recover, but the cursed book has drained you physically and mentally.
+
+
+Event: 21
+Event Name: steal ship supplies
+Stat changes from event: -20 gold, -40 health/HP, 
+Event Outcome: You sneak in and attempt to steal some ship supplies, however you are caught by a couple of guards. They seem to be working for their own interests and allow you to escape as long as you pay them a hefty bribe. Before managing to pull out your coin purse, they beat you up and take some of the coin from your purse. While they don't take you to jail they do leave you in the street bleeding without help.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0
+Currency: 0
+Strength: 0
+Charisma: 2
+Intelligence: 0
+Patrol: 0
+Karma: 0.2
+
+
+Generated Ending:
+The city of Kingstone remembers the lone wanderer as an enigma. Some say he was a genius, always seen with his nose in a book. Others whispered his name and spat on the ground, recalling his involvement with dark rituals and academic research. His actions brought a mix of intrigue and fear to the streets. 
+
+But in the end, it was his kindness that surprised them all. The beggars of Kingstone remembered the man who gave them a coin and listened to their stories. They were the only ones who saw him pass, a victim of a brutal mugging that left him beaten and bleeding on the streets. The lone wanderer took his final breaths, surrounded by the people he spent the most time with – the downtrodden. 
+
+The city mourned for the man they once feared and revered. They remembered how he spent his final days, always seeking knowledge, never settling for an easy life. His thirst for academia may have led to his downfall, but his small acts of kindness gave the beggars of Kingstone comfort. It was his legacy, a complicated man remembered for the light he brought to those who were just as lost as he was.

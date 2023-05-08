@@ -1,0 +1,104 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-infinite
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: participate in acedemic research
+Stat changes from event: -3 charisma, +1 intelligence, 
+Event Outcome: You read through some books, but accidentally venture into some illegal fields of research. Caught but the fascination of your research you delve too deeply and are caught by your peers. They discard your research and they brand you as a despicable academic, spreading a poor reputation throughout the city
+
+
+Event: 2
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: 
+Event Outcome: You want to perform the unsanctioned ritual, but you lack the required knowledge
+
+
+Event: 3
+Event Name: read at library
+Stat changes from event: -5 gold, -1 charisma, +1 intelligence, 
+Event Outcome: You grab a book and start reading for hours on end learning something new. Just as you are about to leave you accidentally spill water on the book. The library workers are upset and you end up paying some coins in restitution.
+
+
+Event: 4
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +7 strength, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you feel that nothing can rival your physically empowered strength. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 5
+Event Name: hunt for game in the forest
+Stat changes from event: +10 gold, 
+Event Outcome: You go hunt for game in the forest and successfully shoot a deer with your bow and arrow. Being strong enough, you manage to carry the entire deer back to the city, which you sell to the butcher for a good amount of coin
+
+
+Event: 6
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 7
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +3 strength, -30 health/HP, 
+Event Outcome: While looking at some of the different equipment the blacksmith sells, you decide to buy a black chainmail. While wearing it you feel much stronger, however unknowingly this piece of cursed equipment also drains your lifeforce
+
+
+Event: 8
+Event Name: buy a healing mixture at alchemist (10 coins)
+Stat changes from event: 
+Event Outcome: The alchemist has rich patrons visiting and won't let you enter because of your status
+
+
+Event: 9
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: +25 health/HP, -2 gold, 
+Event Outcome: The baker is having a sale on bread. It is very crowded but you manage to get the last two pieces of bread for a single coin each. Although a bit stale, you eat them and feel restored.
+
+
+Event: 10
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss.
+
+
+Event: 11
+Event Name: donate to local faith preacher (5 coins)
+Stat changes from event: +0.65 patrol, +0.4 karma, -5 gold, 
+Event Outcome: After you donate your 5 coins to the preacher, he announces the faith has begun to fund zealots in the city to help keep the city safe and secure
+
+
+Event: 12
+Event Name: perform burglary at noble house
+Stat changes from event: -40 health/HP, 
+Event Outcome: You silently break in to the nobles house, and while looking for items of value to steal you accidentally trigger a rigged tripwire trap, which results in poison darts shooting at you. You run away the same way you came in but feeling nauseous from the poison you attempt to rest while recovering.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 183    Range: 0(poor)-infinite
+Strength: 10    Range: 0(weak)-10(very strong)
+Charisma: 0    Range: 0(disgusting)-10(lovely)
+Intelligence: 5    Range: 0(stupid)-10(genius)
+Patrol: 0.65    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0.4    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+The lone wanderer had silently slipped into the city of Kingstone and had made a name for himself in a matter of days. He was feared by some and revered by others, but they all knew he was not to be trusted. His reputation was infamous and he was remembered as a villain in the city. Even after his death, people shuddered at the mention of him. His name became infamous as he was known as a despicable academic who tried to delve too deep into the forbidden world of research.
+
+But, as always, there were two sides to the story. The city's common folk talked about how the wanderer protected them from the unjust rule of the nobles. They recounted how he gave them hope and a sense of security, how he funded the zealots to keep the city safe. But the unfortunate truth was he didn't do it out of the goodness of his heart. The wanderer had a darkness within him that even he could not control and it eventually led to his downfall. His final actions speak for themselves – the unsanctioned dark rituals, burglaries, and the desperation to survive.
+
+The story of the lone wanderer was a cautionary tale for many to come. It was a tale of how the pursuit of power and wealth can corrupt even the most virtuous soul, how the road to redemption could be a treacherous one, and how one wrong step could lead to a fatal end. In the end, the wanderer lived and died by his own code, leaving behind a legacy that would be remembered for years to come.

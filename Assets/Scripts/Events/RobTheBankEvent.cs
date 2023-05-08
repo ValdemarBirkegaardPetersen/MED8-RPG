@@ -19,7 +19,7 @@ public class RobTheBankEvent : MonoBehaviour
         }
 
         var outcome0 = 100 * (eg.getEntropy() * eg.getEntropy());
-        var outcome1 = 10;
+        var outcome1 = 20;
         var outcome2 = 10 - eg.getIntelligence();
         var outcome3 = 10 - eg.getStrength();
         var outcome4 = 10 - eg.getCharisma();
@@ -32,10 +32,10 @@ public class RobTheBankEvent : MonoBehaviour
         {
             eg.setHealth(eg.getHealth() - 30);
             eg.setPatrol(eg.getPatrol() + 0.8f);
-            eg.setStrength(eg.getStrength() - 5);
+            eg.setStrength(eg.getStrength() - 2);
             eg.setKarma(eg.getKarma() - 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault. After reaching the vault, you find it completely empty and are ambushed by the bank guards. Someone tipped them off. Your crew frantically attempts to escape, and although you manage to escape the way you came in you break your arm and are seriously wounded from multiple sword slash wounds.";
+            return "You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault. After reaching the vault, you find it completely empty and are ambushed by the bank guards. Someone tipped them off. Your crew frantically attempts to escape, and although you manage to escape the way you came in you break your arm and are seriously wounded from multiple sword slash wounds. \n(Health -30, Strength -2)";
         }
         else if (finalOutcome == 1)
         {
@@ -43,17 +43,17 @@ public class RobTheBankEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.8f);
             eg.setKarma(eg.getKarma() - 0.2f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            return "You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault with all the coin you can carry. You were undetected, but the city increases its patrols significantly because of the robbery.";
+            return "You thoroughly plan a robbery heist with a crew and finally sneak in during the night to steal from the vault with all the coin you can carry. You were undetected, but the city increases its patrols significantly because of the robbery. \n(Currency +40)";
         }
         else if (finalOutcome == 2)
         {
             eg.setCurrency(eg.getCurrency() - 20);
             eg.setEntropy(eg.getEntropy() + 0.05f);
-            eg.setStrength(eg.getStrength() - 2);
+            eg.setStrength(eg.getStrength() - 1);
             eg.setHealth(eg.getHealth() - 10);
             eg.setPatrol(eg.getPatrol() + 0.8f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You plan the robbery heist with a crew, but due to poor planning you trip the alarm system and are caught. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food.";
+            return "You plan the robbery heist with a crew, but due to poor planning you trip the alarm system and are caught. You pay a huge fine and serve some time in jail. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. \n(Health -10, Currency -20, Strength -1)";
         }
         else if (finalOutcome == 3)
         {
@@ -61,17 +61,17 @@ public class RobTheBankEvent : MonoBehaviour
             eg.setPatrol(eg.getPatrol() + 0.6f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You plan the robbery heist with a crew, but after successfully infiltrating the vault you are unable to carry as many coins as you thought. You manage to escape stealthily but the profits could have been better.";
+            return "You plan the robbery heist with a crew, but after successfully infiltrating the vault you are unable to carry as many coins as you thought. You manage to escape stealthily but the profits could have been better. \n(Currency +15)";
         }
         else if (finalOutcome == 4)
         {
             eg.setCurrency(eg.getCurrency() - 20);
-            eg.setStrength(eg.getStrength() - 2);
+            eg.setStrength(eg.getStrength() - 1);
             eg.setHealth(eg.getHealth() - 10);
             eg.setPatrol(eg.getPatrol() + 0.8f);
             eg.setEntropy(eg.getEntropy() + 0.05f);
             eg.setKarma(eg.getKarma() - 0.2f);
-            return "You plan the robbery heist with a crew, but they betray you and lock you in the vault as they escape. You are later caught by the guards. After serving some time in jail you pay a huge fine and are let out. You are very malnourished by the poor and rotten jail food";
+            return "You plan the robbery heist with a crew, but they betray you and lock you in the vault as they escape. You are later caught by the guards. You pay a huge fine and serve some time in jail. Guard patrols are increased in the city, and when you are let out you are very malnourished by the poor and rotten jail food. \n(Health -10, Currency -20, Strength -1)";
         }
 
         Debug.Log("Error in outcome calculcation");

@@ -1,0 +1,112 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: help farmer collect his harvest
+Stat changes from event: +13 gold, 
+Event Outcome: You start working and notice the farm could use some improvements. Not only do you collect various vegetables for the farmer, but you also give him some tips about agriculture for better harvest in the future. He thanks you and gives you a bonus for the tip
+
+
+Event: 2
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, -15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it, but it didn't seem very fresh. You experience som slight food poisoning
+
+
+Event: 3
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored
+
+
+Event: 4
+Event Name: buy bread from the local baker (3 coins)
+Stat changes from event: -3 gold, +15 health/HP, 
+Event Outcome: You pay the baker 3 coins for some bread. You eat it and feel restored
+
+
+Event: 5
+Event Name: meditate at holy shrine
+Stat changes from event: +1 intelligence, 
+Event Outcome: You spend hours reflecting on your life choices and what you could have done differently. You feel slightly wiser as a result
+
+
+Event: 6
+Event Name: catch fish at the docks
+Stat changes from event: -40 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can
+
+
+Event: 7
+Event Name: unload ship goods at the dock
+Stat changes from event: +1 strength, +5 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. Not only do you earn a bit of coin, but you also feel stronger
+
+
+Event: 8
+Event Name: steal ship supplies
+Stat changes from event: +15 gold, +0.4 patrol, -0.2 karma, 
+Event Outcome: You attempt to steal some supplies, and although you are detected you manage to escape with some goods which you sell for a profit on the black market. Patrols in the city are increased.
+
+
+Event: 9
+Event Name: unload ship goods at the dock
+Stat changes from event: +1 strength, +10 gold, 
+Event Outcome: You spend all day carrying crates from the ship into the dock storage area. You work twice as well as any other dock worker and you are rewarded for your efficiency. You gain a nice coin bonus as well as feeling stronger from all the hard work
+
+
+Event: 10
+Event Name: catch fish at the docks
+Stat changes from event: -40 health/HP, 
+Event Outcome: You notice a sign that says 'Caution!' which usually isn't there, but you decide to ignore it at fish anyway. All of a sudden an alligator lurking in the sewer pipe lunges out and attacks you, grabbing and biting you. A few nearby guards help fend off the alligator, and attempt to treat your bleeding wounds as best as they can
+
+
+Event: 11
+Event Name: buy equipment at the local blacksmith (25 coins)
+Stat changes from event: -25 gold, +5 strength, 
+Event Outcome: The blacksmith forges up some steel armor, fitted perfectly for you. While it is still not a full set of armor, the weight and resistance of the armor increases your physical strength and resistance
+
+
+Event: 12
+Event Name: read at library
+Stat changes from event: +3 intelligence, -1 strength, -10 health/HP, 
+Event Outcome: You find a huge ancient dusty tome hidden away. Curious you dust it off and carry the heavy book to a nearby table spraining a muscle in the process. But reading through the book you uncover hidden life knowledge.
+
+
+Event: 13
+Event Name: perform unsanctioned dark ritual
+Stat changes from event: -30 health/HP, +100 gold, 
+Event Outcome: You start the ritual by drawing signs on the floor. You read the incantations aloud and bloodlet with a sacrificial knife. You have visions lasting for hours, and when you wake up, you find yourself covered in bloody coins. You fumble around looking for a bandage as you have an intense blood loss.
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 123    Range: 0(poor)-50+(rich)
+Strength: 9    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 7    Range: 0(stupid)-10(genius)
+Patrol: 0.4    Range: 0(no guards)-1(patrols everywhere)
+Karma: -0.2    Range: -1(evil)-1(good)
+
+
+Generated Ending:
+After travelling for many days, a lone wanderer stumbled into the city of Kingstone. Trying to make a name for himself, he wandered the streets and used his skills to survive.
+
+He found himself helping farmers with their harvest, catching fish, unloading ship goods, and buying bread from the local baker. Despite encountering an alligator and experiencing food poisoning, he persevered and became stronger.
+
+As he explored the city, he meditated at a holy shrine and read ancient texts at the library, gaining wisdom and intelligence. But he also performed a dark ritual, losing his health and damaging his karma.
+
+Unfortunately, it was this ritual that led to his downfall. As he bled out on the ground, covered in bloody coins, the people of Kingstone would remember him as a mysterious and misguided wanderer. His skills and strengths were impressive, but his misguided actions would be his downfall.
