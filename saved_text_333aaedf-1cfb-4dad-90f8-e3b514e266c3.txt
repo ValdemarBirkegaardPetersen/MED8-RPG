@@ -1,0 +1,132 @@
+Prompt:
+Using the given event log from a 2D top-down RPG, generate a creative ending for the game. The event log presents events in linear time, along with their story consequences and the impacted stats. Additionally, the player's stats at the beginning and end of the game are provided. Draw inspiration from the stats but avoid directly mentioning them in the ending. In order for you to fully understand the narrative context, you will firstly be presented with the intro text that the player is shown at the beginning of the game: 'After travelling for many days, a lone wanderer stumbles into the city of Kingstone. Trying to make a name for himself, this is his story...' 
+
+Based on the events and stats, write a short conclusion including closure in his story, using the cause of death and final stats to explain how he will be remembered in the city. The generated ending must be between 200-225 words. 
+
+Event Log: 
+The players stats at the beginning of the game: 
+Health: 100    Range: 0(dead)-100(healthy))
+Currency: 10    Range: 0(poor)-50+(rich)
+Strength: 3    Range: 0(weak)-10(very strong)
+Charisma: 3    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+Event: 1
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading. 
+(Currency -3, Currency +9, Charisma -1)
+
+
+Event: 2
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: +10 gold, +1 intelligence, 
+Event Outcome: You get an ale and someone invites you to play a game of chess. You play for fun to begin with, but you start getting competitive and play for money. With an increasing audience watching you play you manage to win multiple times making a bit of profit. 
+(Currency +10, Intelligence +1)
+
+
+Event: 3
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: +6 gold, -1 charisma, 
+Event Outcome: Using your 3 coins, you buy and sell different wares at the market. You make great profit during the day, but you get a bit of a poor reputation because of your aggressive trading. 
+(Currency -3, Currency +9, Charisma -1)
+
+
+Event: 4
+Event Name: drink ale at local tavern (2 coins)
+Stat changes from event: -15 gold, -1 intelligence, 
+Event Outcome: You go and order an ale which you quickly finish. You can't stop yourself from getting another. One ale turns into two, which turns into three and before you know it. You wake up having sparse memory of the night prior. You spent more coin than you initially planned and now have a massive headache making it hard to think. 
+(Currency -15, Intelligence -1)
+
+
+Event: 5
+Event Name: trade spices and wares at market (3 coins)
+Stat changes from event: 
+Event Outcome: As you are about the do some trading you notice all the traders scoffing at you. No one wants to trade with you, so you decide to leave instead. 
+(Charisma too low)
+
+
+Event: 6
+Event Name: help farmer collect his harvest
+Stat changes from event: -35 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, it does take a heavy toll on your health. 
+(Health -35)
+
+
+Event: 7
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however. 
+(Strength +1)
+
+
+Event: 8
+Event Name: help farmer collect his harvest
+Stat changes from event: +1 gold, +10 health/HP, 
+Event Outcome: You help the farmer collect and sort tomatoes. The harvest has been pretty poor this time around however, so the farmer cannot afford to pay you as much. To make up for it he gives you a few tomatoes which you eat to feel restored. 
+(Currency +1, Health +10)
+
+
+Event: 9
+Event Name: mine for ore
+Stat changes from event: +5 gold, +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. Because of your strength you are able to mine a lot more ore than usual and you make some decent profit along with feeling stronger. 
+(Strength +1, Currency +5)
+
+
+Event: 10
+Event Name: help farmer collect his harvest
+Stat changes from event: +13 gold, 
+Event Outcome: You start working and notice the farm could use some improvements. Not only do you collect various vegetables for the farmer, but you also give him some tips about agriculture for better harvest in the future. He thanks you and gives you a bonus for the tip. 
+(Currency +13)
+
+
+Event: 11
+Event Name: mine for ore
+Stat changes from event: +40 gold, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. Just as you begin to mine, you see a rare gem in the rock which you uncover. It is a rare emerald, which you sell for a lot of profit. Lucky you. 
+(Currency +40)
+
+
+Event: 12
+Event Name: help farmer collect his harvest
+Stat changes from event: -35 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, it does take a heavy toll on your health. 
+(Health -35)
+
+
+Event: 13
+Event Name: mine for ore
+Stat changes from event: +1 strength, 
+Event Outcome: You grab a pickaxe and start prospecting for rare minerals. You barely find any ore and you are only able to cover the food and water you consumed during mining with the payout. You feel strengthened from swinging the pickaxe however. 
+(Strength +1)
+
+
+Event: 14
+Event Name: help farmer collect his harvest
+Stat changes from event: -35 health/HP, 
+Event Outcome: You go to collect some vegetables, but after a while you notice most of the farm has rotten fruit with rodents running around. Not only do you end the day with some lousy pay because of the bad harvest, but you have also caught some sort of minor plague infection by the rats. While it doesn't last for so long, it does take a heavy toll on your health. 
+(Health -35)
+
+
+Event: 15
+Event Name: mine for ore
+Stat changes from event: -40 health/HP, -2 charisma, 
+Event Outcome: You grab a pickaxe and start mining. After a while the ground starts shaking with tremors and all of a sudden a sinkhole appears underneath you. You fall down and experience multiple blunt impacts on your body and you break your jaw. After getting helped out, the hole is filled and you are left with a dislocated jaw, a speech impediment, and serious injuries on your body. 
+(Health -40, Charisma -2)
+
+Player died at the last event. 
+
+The players stats at the end of the game: 
+Health: 0    Range: 0(dead)-100(healthy))
+Currency: 76    Range: 0(poor)-50+(rich)
+Strength: 6    Range: 0(weak)-10(very strong)
+Charisma: 0    Range: 0(disgusting)-10(lovely)
+Intelligence: 3    Range: 0(stupid)-10(genius)
+Patrol: 0    Range: 0(no guards)-1(patrols everywhere)
+Karma: 0    Range: -1(evil)-1(good)
+
+
+Generated Ending:
